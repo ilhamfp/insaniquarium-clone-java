@@ -33,7 +33,7 @@ public class Aquarium {
         this.money = money;
     }
 
-    public double getCurrentTime() {
+    public Timer getCurrentTime() {
         // set current time
         return currentTime;
     }
