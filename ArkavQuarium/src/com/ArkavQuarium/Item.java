@@ -14,12 +14,12 @@ public class Item extends Point{
         speed = ITEM_SPEED;
     }
 
-    void move(double maks){
+    public void move(double maks){
         double gerakSejauh = Math.min(super.getY()+speed,maks);
         super.setLocation(getX(),gerakSejauh);
     }
 
-    boolean isAtBottom(double bottom){
+    public boolean isAtBottom(double bottom){
         return (super.getY() == bottom);
     }
 }
