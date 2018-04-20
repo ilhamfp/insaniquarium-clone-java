@@ -1,3 +1,5 @@
+package com.ArkavQuarium;
+
 public class Point{
     private double x,y;
 
