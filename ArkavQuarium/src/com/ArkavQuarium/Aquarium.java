@@ -1,6 +1,5 @@
 package com.ArkavQuarium;
 import java.util.Random;
-import java.util.Timer;
 
 public class Aquarium {
     protected Point maxLocation = new Point();
@@ -14,10 +13,10 @@ public class Aquarium {
     protected int guppyPeriod;
     protected int piranhaPeriod;
     protected int foodPeriod;
-    protected Timer currentTime;
+    protected long startTime;
 
     public Aquarium(int screenWidth, int screenHeight) {
-        currentTime = new Timer();
+        startTime = System.nanoTime();
         maxLocation.setLocation((double)screenWidth, (double)screenHeight);
         garry = new Snail(new Point((double)screenWidth/2,(double)screenHeight - 40.0));
         egg = 0;
@@ -33,9 +32,9 @@ public class Aquarium {
         this.money = money;
     }
 
-    public Timer getCurrentTime() {
-        // set current time
-        return currentTime;
+    public long getCurrentTime() {
+        long estimatedTime = System.nanoTime() - startTime;
+        return estimatedTime;
     }
 
     public Point getMaxLocation() {
@@ -66,7 +65,7 @@ public class Aquarium {
         Random rand = new Random();
         int x = rand.nextInt((int)maxLocation.getX()) + 1;
         int y = rand.nextInt((int)maxLocation.getY()) + 1;
-        Guppy guppy = new Guppy(x, y, getCurrentTime());
+        Guppy guppy = new Guppy(getCurrentTime(), x, y);
         listGuppy.add(guppy);
     }
 
@@ -74,7 +73,7 @@ public class Aquarium {
         Random rand = new Random();
         int x = rand.nextInt((int)maxLocation.getX()) + 1;
         int y = rand.nextInt((int)maxLocation.getY()) + 1;
-        Piranha piranha = new Piranha(x, y, getCurrentTime());
+        Piranha piranha = new Piranha(getCurrentTime(), x, y);
         listPiranha.add(piranha);
     }
 

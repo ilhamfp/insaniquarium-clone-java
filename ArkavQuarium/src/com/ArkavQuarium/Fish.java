@@ -7,20 +7,20 @@ public abstract class Fish extends Point {
 
     protected double speed;
     protected int direction;
-    protected double lastEaten;
-    protected double hungryConstraint;
-    protected double fullConstraint;
-    protected double changeDirInterval;
+    protected long lastEaten;
+    protected long hungryConstraint;
+    protected long fullConstraint;
+    protected long changeDirInterval;
     protected double directionRad;
-    protected double lastChangeDir;
+    protected long lastChangeDir;
 
-    public Fish(double time, double x, double y) {
+    public Fish(long time, double x, double y) {
         super(x, y);
 
         speed = 1.25;
-        hungryConstraint = 10.0;
-        fullConstraint = 6.0;
-        changeDirInterval = 2.5;
+        hungryConstraint = 10000;
+        fullConstraint = 6000;
+        changeDirInterval = 2500;
         lastEaten = time;
         lastChangeDir = time;
 
@@ -49,35 +49,35 @@ public abstract class Fish extends Point {
         this.direction = direction;
     }
 
-    public double getLastEaten() {
+    public long getLastEaten() {
         return lastEaten;
     }
 
-    public void setLastEaten(double lastEaten) {
+    public void setLastEaten(long lastEaten) {
         this.lastEaten = lastEaten;
     }
 
-    public double getHungryConstraint() {
+    public long getHungryConstraint() {
         return hungryConstraint;
     }
 
-    public void setHungryConstraint(double hungryConstraint) {
+    public void setHungryConstraint(long hungryConstraint) {
         this.hungryConstraint = hungryConstraint;
     }
 
-    public double getFullConstraint() {
+    public long getFullConstraint() {
         return fullConstraint;
     }
 
-    public void setFullConstraint(double fullConstraint) {
+    public void setFullConstraint(long fullConstraint) {
         this.fullConstraint = fullConstraint;
     }
 
-    public double getChangeDirInterval() {
+    public long getChangeDirInterval() {
         return changeDirInterval;
     }
 
-    public void setChangeDirInterval(double changeDirInterval) {
+    public void setChangeDirInterval(long changeDirInterval) {
         this.changeDirInterval = changeDirInterval;
     }
 
@@ -89,15 +89,15 @@ public abstract class Fish extends Point {
         this.directionRad = directionRad;
     }
 
-    public double getLastChangeDir() {
+    public long getLastChangeDir() {
         return lastChangeDir;
     }
 
-    public void setLastChangeDir(double lastChangeDir) {
+    public void setLastChangeDir(long lastChangeDir) {
         this.lastChangeDir = lastChangeDir;
     }
 
-    public abstract void moveRandom(double time, Point max);
+    public abstract void moveRandom(long time, Point max);
 
     public double createDirection(double x, double y, Point max) {
         Random random = new Random();
@@ -121,15 +121,15 @@ public abstract class Fish extends Point {
                 && y <= (max.getY() - 40.0);
     }
 
-    public boolean isHungry(double time) {
+    public boolean isHungry(long time) {
         return (time - lastEaten) >= fullConstraint;
     }
 
-    public boolean isTimeToDie(double time) {
+    public boolean isTimeToDie(long time) {
         return (time - lastEaten) >= hungryConstraint;
     }
 
-    public boolean isTimeToChangeDirection(double time) {
+    public boolean isTimeToChangeDirection(long time) {
         return (time - lastChangeDir) >= changeDirInterval;
     }
 
