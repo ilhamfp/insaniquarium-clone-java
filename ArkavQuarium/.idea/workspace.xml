@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4e85bcb-a90d-4f87-a647-1bd828321e74" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Guppy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ArkavQuarium/Guppy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Piranha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ArkavQuarium/Piranha.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/test/ItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ArkavQuarium/test/ItemTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,11 +40,8 @@
       <file leaf-file-name="ItemTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/test/ItemTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -433,7 +428,7 @@
       <option name="presentableId" value="Default" />
       <updated>1524233687736</updated>
       <workItem from="1524233693492" duration="139000" />
-      <workItem from="1524233864476" duration="6309000" />
+      <workItem from="1524233864476" duration="6372000" />
     </task>
     <servers />
   </component>
@@ -470,7 +465,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6448000" />
+    <option name="totallyTimeSpent" value="6511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -571,9 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -769,11 +761,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/test/ItemTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
