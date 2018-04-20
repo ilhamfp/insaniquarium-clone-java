@@ -1,5 +1,8 @@
 package com.ArkavQuarium;
+
 import java.util.Random;
+import javax.swing.*;
+import java.awt.*;
 
 public class Aquarium {
     public static final int EGG_PRICE = 500;
@@ -19,6 +22,8 @@ public class Aquarium {
     protected int piranhaPeriod;
     protected int foodPeriod;
     protected long startTime;
+
+    protected JFrame frame;
 
     public Aquarium(int screenWidth, int screenHeight) {
         startTime = System.nanoTime();
@@ -63,7 +68,12 @@ public class Aquarium {
     }
 
     public void run() {
-        // implementasi draw
+        frame = new JFrame("Arkavquarium");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        while (true) {
+            
+        }
     }
 
     public void createGuppy() {
@@ -240,6 +250,10 @@ public class Aquarium {
             }
         }
     }
+
+//    public static void main(String[] args) {
+//        new Aquarium(1080,720).run();
+//    }
 
     public int getStateGame() {
         if (egg == 3) return 2;
