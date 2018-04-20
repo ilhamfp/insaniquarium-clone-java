@@ -52,6 +52,18 @@ public class LinkedList<T> {
         return size;
     }
 
+    public T get(int idx){
+        Element<T> curr = first;
+        for(int i = 0; i < getSize(); i++){
+            if(curr.getNext() != null)
+                curr = curr.getNext();
+        }
+        return curr.getData();
+    }
+
+    public boolean isEmpty(){
+        return size == 0;
+    }
     // add a data to linkedlist
     public void add(T data) {
         Element<T> tmp = new Element<T>(data);
