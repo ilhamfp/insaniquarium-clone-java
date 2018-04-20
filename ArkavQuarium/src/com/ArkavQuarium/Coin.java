@@ -1,4 +1,5 @@
 package com.ArkavQuarium;
+import static com.ArkavQuarium.Constants.*;
 
 public class Coin extends Item {
     private int baseVal;
@@ -6,13 +7,13 @@ public class Coin extends Item {
 
     public Coin(){
         super(-1,-1);
-        baseVal = 15;
+        baseVal = COIN_BASE_VALUE;
         value = 0;
     }
 
     public Coin(Point p, int level){
         super(p.getX(),p.getY());
-        baseVal = 15;
+        baseVal = COIN_BASE_VALUE;
         value = baseVal*level;
     }
 

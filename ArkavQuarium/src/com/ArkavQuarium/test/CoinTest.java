@@ -27,4 +27,5 @@ class CoinTest {
         assertEquals(expectedX,c.getX());
         assertEquals(expectedY,c.getY());
     }
+
 }
