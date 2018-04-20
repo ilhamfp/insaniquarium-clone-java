@@ -9,15 +9,22 @@ import org.junit.jupiter.api.Test;
 class FoodTest {
 
     @Test
-    public void testConstructorFood() {
-        Point p = new Point(2.0,3.0);
-        Food f = new Food(p);
-
-        double expectedX = 2.0;
-        double expectedY = 3.0;
-
+    public void testConstructorFoodEmpty() {
+        Food f = new Food();
+        double expectedX = -1.0;
+        double expectedY = -1.0;
         assertEquals(expectedX,f.getX());
         assertEquals(expectedY,f.getY());
 
+    }
+
+    @Test
+    public void testConstructorFoodWithParameters() {
+        Point p = new Point(2.0,3.0);
+        Food f = new Food(p);
+        double expectedX = 2.0;
+        double expectedY = 3.0;
+        assertEquals(expectedX,f.getX());
+        assertEquals(expectedY,f.getY());
     }
 }

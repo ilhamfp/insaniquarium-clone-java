@@ -1,3 +1,5 @@
+package com.ArkavQuarium;
+
 public class Bool {
     private boolean value;
 

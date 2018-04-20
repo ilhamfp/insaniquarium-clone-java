@@ -4,7 +4,7 @@ public class Food extends Item {
     private int price;
 
     public Food(){
-        super(0,0);
+        super(-1.0,-1.0);
         price = 5;
     }
 

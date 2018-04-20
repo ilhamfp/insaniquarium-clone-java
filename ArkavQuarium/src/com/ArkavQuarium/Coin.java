@@ -13,7 +13,7 @@ public class Coin extends Item {
     public Coin(Point p, int level){
         super(p.getX(),p.getY());
         baseVal = 15;
-        value = 0;
+        value = baseVal*level;
     }
 
     /*** setter, getter ***/

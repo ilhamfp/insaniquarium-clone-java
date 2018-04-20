@@ -1,3 +1,5 @@
+package com.ArkavQuarium;
+
 public class Snail extends Point{
 
     private int direction;
