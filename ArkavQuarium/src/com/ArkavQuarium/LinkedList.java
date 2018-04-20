@@ -1,5 +1,4 @@
 package com.ArkavQuarium;
-import java.util.Currency;
 
 public class LinkedList<T> {
     private Element<T> first;

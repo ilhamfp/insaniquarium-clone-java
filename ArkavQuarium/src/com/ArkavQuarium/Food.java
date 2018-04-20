@@ -12,4 +12,8 @@ public class Food extends Item {
         super(p.getX(),p.getY());
         price = 5;
     }
+
+    public int getPrice() {
+        return price;
+    }
 }
