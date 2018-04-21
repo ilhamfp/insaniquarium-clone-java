@@ -11,12 +11,6 @@ public class Drawer {
     protected Aquarium aquarium;
     protected long time;
 
-    protected LinkedList<Guppy> listGuppy = new LinkedList<Guppy>();
-    protected LinkedList<Piranha> listPiranha = new LinkedList<Piranha>();
-    protected LinkedList<Food> listFood = new LinkedList<Food>();
-    protected LinkedList<Coin> listCoin = new LinkedList<Coin>();
-    protected Snail garry = new Snail();
-
     public void run() {
         aquarium = new Aquarium(1080, 720);
 
@@ -31,7 +25,7 @@ public class Drawer {
 
             @Override
             public void mousePressed(MouseEvent e) {
-                aquarium.createFood(new Point(e.getX(), e.getY()));
+                aquarium.createGuppy();
                 System.out.println(e.getX() + " " + e.getY());
             }
         });
@@ -44,15 +38,9 @@ public class Drawer {
         while (true) {
             aquarium.run();
 
-            listGuppy = aquarium.getListGuppy();
-            listPiranha = aquarium.getListPiranha();
-            listFood = aquarium.getListFood();
-            listCoin = aquarium.getListCoin();
-            garry = aquarium.getGarry();
-
+            System.out.println(aquarium.getListGuppy().getSize());
+            aquarium.getListGuppy().get(0).print();
             moveAll();
-            frame.add(drawPanel);
-            frame.repaint();
         }
     }
 
@@ -93,23 +81,27 @@ public class Drawer {
             super.paintComponent(g);
             g.drawImage(backgroundImage, 0, 0, this);
 
-            for (int i = 0; i < listGuppy.getSize(); i++) {
-                drawGuppy(listGuppy.get(i), g);
+            if (!aquarium.getListGuppy().isEmpty()) {
+                for (int i = 0; i < aquarium.getListGuppy().getSize(); i++) {
+                    drawGuppy(aquarium.getListGuppy().get(i), g);
+                }
             }
 
-            for (int i = 0; i < listPiranha.getSize(); i++) {
-                drawPiranha(listPiranha.get(i), g);
+            if (!aquarium.getListPiranha().isEmpty()) {
+                for (int i = 0; i < aquarium.getListPiranha().getSize(); i++) {
+                    drawPiranha(aquarium.getListPiranha().get(i), g);
+                }
             }
 
-            for (int i = 0; i < listFood.getSize(); i++) {
-                drawFood(listFood.get(i), g);
+            for (int i = 0; i < aquarium.getListFood().getSize(); i++) {
+                drawFood(aquarium.getListFood().get(i), g);
             }
 
-            for (int i = 0; i < listCoin.getSize(); i++) {
-                drawCoin(listCoin.get(i), g);
+            for (int i = 0; i < aquarium.getListCoin().getSize(); i++) {
+                drawCoin(aquarium.getListCoin().get(i), g);
             }
 
-            drawSnail(garry, g);
+            drawSnail(aquarium.getGarry(), g);
         }
 
         public void drawSnail(Snail snail, Graphics g) {
@@ -201,7 +193,7 @@ public class Drawer {
     }
 
     public void moveAll() {
-
+        frame.repaint();
     }
 
 /*

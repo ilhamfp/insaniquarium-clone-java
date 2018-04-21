@@ -54,7 +54,7 @@ public class LinkedList<T> {
 
     public T get(int idx){
         Element<T> curr = first;
-        for(int i = 0; i < getSize(); i++){
+        for(int i = 0; i < idx; i++){
             if(curr.getNext() != null)
                 curr = curr.getNext();
         }
