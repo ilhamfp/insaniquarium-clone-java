@@ -118,6 +118,12 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1348" />
+    <option name="height" value="730" />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -166,6 +172,11 @@
       </pane>
       <pane id="AndroidView" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -312,12 +323,12 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.All Unit tests" />
+      <item itemvalue="JUnit.AllTest" />
       <item itemvalue="JUnit.FoodTest.testConstructorFood" />
       <item itemvalue="JUnit.FoodTest.testConstructorFood2" />
       <item itemvalue="JUnit.FoodTest" />
       <item itemvalue="JUnit.CoinTest.testConstructorCoinEmpty" />
       <item itemvalue="JUnit.CoinTest" />
-      <item itemvalue="JUnit.AllTest" />
     </list>
     <recent_temporary>
       <list>
