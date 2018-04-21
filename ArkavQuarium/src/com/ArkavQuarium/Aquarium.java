@@ -1,14 +1,11 @@
 package com.ArkavQuarium;
-
+import static com.ArkavQuarium.Constants.*;
 import java.util.Random;
 import javax.swing.*;
 import java.awt.*;
 
 public class Aquarium {
-    public static final int EGG_PRICE = 500;
-    public static final int GUPPY_PRICE = 25;
-    public static final int PIRANHA_PRICE = 100;
-    public static final double COIN_RADIUS = 25.0;
+
 
     protected Point maxLocation = new Point();
     protected LinkedList<Guppy> listGuppy = new LinkedList<Guppy>();
