@@ -54,6 +54,10 @@ public class Aquarium {
         return money;
     }
 
+    public LinkedList<Piranha> getListPiranha() { return listPiranha; }
+
+    public Snail getGarry() { return garry; }
+
     public LinkedList<Guppy> getListGuppy() {
         return listGuppy;
     }
