@@ -1,5 +1,7 @@
 package com.ArkavQuarium;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import javax.swing.*;
 
 public class Drawer {
@@ -24,6 +26,16 @@ public class Drawer {
         drawPanel = new DrawPanel();
 
         frame.add(drawPanel);
+
+        drawPanel.addMouseListener(new MouseAdapter() {
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+                aquarium.createFood(new Point(e.getX(), e.getY()));
+                System.out.println(e.getX() + " " + e.getY());
+            }
+        });
+
         frame.setResizable(false);
         frame.setSize(1080, 720);
         frame.setLocationByPlatform(true);
@@ -39,6 +51,8 @@ public class Drawer {
             garry = aquarium.getGarry();
 
             moveAll();
+            frame.add(drawPanel);
+            frame.repaint();
         }
     }
 
@@ -71,7 +85,7 @@ public class Drawer {
         }
 
         public void loadBackground() {
-            ImageIcon pp = new ImageIcon("assets/img/aquarium.png");
+            ImageIcon pp = new ImageIcon("src/com/ArkavQuarium/assets/img/aquarium.png");
             backgroundImage = pp.getImage();
         }
 
@@ -105,8 +119,8 @@ public class Drawer {
             int direction = snail.getDirection();
             String filename = "snail" + String.valueOf(fps);
 
-            if (direction == 1) filename = "assets/img/r" + filename;
-            else filename = "assets/img/" + filename;
+            if (direction == 1) filename = "src/com/ArkavQuarium/assets/img/r" + filename;
+            else filename = "src/com/ArkavQuarium/assets/img/" + filename;
 
             ImageIcon temp = new ImageIcon(filename);
             Image snailImage = temp.getImage();
@@ -118,7 +132,7 @@ public class Drawer {
             int fps = getFrame();
             double x = food.getX();
             double y = food.getY();
-            String filename = "assets/img/food" + String.valueOf(fps);
+            String filename = "src/com/ArkavQuarium/assets/img/food" + String.valueOf(fps);
 
             ImageIcon temp = new ImageIcon(filename);
             Image foodImage = temp.getImage();
@@ -135,10 +149,10 @@ public class Drawer {
             double y = coin.getY();
             int level = coin.getValue() / coin.getBaseVal();
 
-            if (level == 1) filename = "assets/img/b" + filename;
-            else if (level == 2) filename = "assets/img/g" + filename;
-            else if (level == 3) filename = "assets/img/s" + filename;
-            else filename = "assets/img/dcoin.png";
+            if (level == 1) filename = "src/com/ArkavQuarium/assets/img/b" + filename;
+            else if (level == 2) filename = "src/com/ArkavQuarium/assets/img/g" + filename;
+            else if (level == 3) filename = "src/com/ArkavQuarium/assets/img/s" + filename;
+            else filename = "src/com/ArkavQuarium/assets/img/dcoin.png";
 
             ImageIcon temp = new ImageIcon(filename);
             Image coinImage = temp.getImage();
@@ -155,8 +169,8 @@ public class Drawer {
             double x = guppy.getX();
             double y = guppy.getY();
 
-            if (direction == 1) filename = "assets/img/rguppy" + String.valueOf(fps);
-            else filename = "assets/img/guppy" + String.valueOf(fps);
+            if (direction == 1) filename = "src/com/ArkavQuarium/assets/img/rguppy" + String.valueOf(fps);
+            else filename = "src/com/ArkavQuarium/assets/img/guppy" + String.valueOf(fps);
 
             if (level == 1) filename += ".png";
             else if (level == 2) filename += "1.png";
@@ -175,8 +189,8 @@ public class Drawer {
             double x = piranha.getX();
             double y = piranha.getY();
 
-            if (direction == 1) filename = "assets/img/rpiranha" + String.valueOf(fps) + ".png";
-            else filename = "assets/img/piranha" + String.valueOf(fps) + ".png";
+            if (direction == 1) filename = "src/com/ArkavQuarium/assets/img/rpiranha" + String.valueOf(fps) + ".png";
+            else filename = "src/com/ArkavQuarium/assets/img/piranha" + String.valueOf(fps) + ".png";
 
             ImageIcon temp = new ImageIcon(filename);
             Image piranhaImage = temp.getImage();
