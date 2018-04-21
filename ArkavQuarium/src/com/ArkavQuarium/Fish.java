@@ -2,6 +2,7 @@ package com.ArkavQuarium;
 
 import java.util.Random;
 import java.lang.Math;
+import static com.ArkavQuarium.Constants.*;
 
 public abstract class Fish extends Point {
 
@@ -17,10 +18,10 @@ public abstract class Fish extends Point {
     public Fish(long time, double x, double y) {
         super(x, y);
 
-        speed = 1.25;
-        hungryConstraint = 10000;
-        fullConstraint = 6000;
-        changeDirInterval = 2500;
+        speed = FISH_SPEED;
+        hungryConstraint = FISH_HUNGRY_CONSTRAINT;
+        fullConstraint = FISH_FULL_CONSTRAINT;
+        changeDirInterval = FISH_CHANGE_DIR_INTERVAL;
         lastEaten = time;
         lastChangeDir = time;
 
