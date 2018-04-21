@@ -89,6 +89,7 @@ public class LinkedList<T> {
                 this.first.setData(null);
                 this.first = this.first.getNext();
             }
+            size --;
         } else {
             boolean deleted = false;
             while (!deleted) {
