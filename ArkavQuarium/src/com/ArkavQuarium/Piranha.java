@@ -1,6 +1,7 @@
 package com.ArkavQuarium;
 
 import java.lang.Math;
+import static com.ArkavQuarium.Constants.*;
 
 public class Piranha extends Fish {
 
@@ -8,8 +9,8 @@ public class Piranha extends Fish {
 
     public Piranha(long time, double x, double y) {
         super(time, x, y);
-        price = 100;
         setSpeed(getSpeed() + 0.5);
+        price = PIRANHA_PRICE;
     }
 
     @Override

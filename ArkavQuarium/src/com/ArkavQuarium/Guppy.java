@@ -1,6 +1,7 @@
 package com.ArkavQuarium;
 
 import java.lang.Math;
+import static com.ArkavQuarium.Constants.*;
 
 public class Guppy extends Fish {
 
@@ -16,10 +17,10 @@ public class Guppy extends Fish {
 
         growthStep = 1;
         foodCount = 0;
-        price = 25;
-        foodThreshold = 3;
         lastCoinTime = 0;
-        coinInterval = 6000;
+        foodThreshold = GUPPY_FOOD_THRESHOLD;
+        price = GUPPY_PRICE;
+        coinInterval = GUPPY_COIN_INTERVAL;
     }
 
     public int getGrowthStep() {
