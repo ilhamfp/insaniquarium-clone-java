@@ -1,5 +1,6 @@
 package com.ArkavQuarium.test;
 
+import com.ArkavQuarium.Point;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -7,38 +8,17 @@ import static org.junit.jupiter.api.Assertions.*;
 class PointTest {
 
     @Test
-    void getX() {
-    }
-
-    @Test
-    void getY() {
-    }
-
-    @Test
-    void getLocation() {
-    }
-
-    @Test
-    void setX() {
-    }
-
-    @Test
-    void setY() {
-    }
-
-    @Test
-    void setLocation() {
-    }
-
-    @Test
     void findDistance() {
+        Point p1 = new Point();
+        Point p2 = new Point(3,4);
+        double distance = p1.findDistance(p2);
+        assertEquals(5.0, distance);
     }
 
     @Test
     void equals() {
-    }
-
-    @Test
-    void print() {
+        Point p1 = new Point();
+        Point p2 = new Point();
+        assertEquals(true, p1.equals(p2));
     }
 }
