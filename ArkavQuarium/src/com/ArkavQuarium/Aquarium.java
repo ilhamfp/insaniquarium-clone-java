@@ -25,14 +25,16 @@ public class Aquarium {
     public Aquarium(int screenWidth, int screenHeight) {
         startTime = System.nanoTime();
         maxLocation.setLocation((double)screenWidth, (double)screenHeight);
-        garry = new Snail(new Point((double)screenWidth/2,(double)screenHeight - 40.0));
         egg = 0;
         guppyPeriod = 10;
         foodPeriod = 10;
         piranhaPeriod = 10;
         money = 200;
 
-        // init draw
+        //
+        garry = new Snail(new Point((double)screenWidth/2,(double)screenHeight - 40.0));
+        Guppy firstGuppy = new Guppy(startTime,(double)screenWidth/2,(double)screenHeight/2);
+        listGuppy.add(firstGuppy);
     }
 
     public void setMoney(int money) {
@@ -65,12 +67,7 @@ public class Aquarium {
     }
 
     public void run() {
-        frame = new JFrame("Arkavquarium");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        while (true) {
-            
-        }
     }
 
     public void createGuppy() {
