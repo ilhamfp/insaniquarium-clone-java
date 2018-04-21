@@ -1,6 +1,7 @@
 package com.ArkavQuarium;
 import static com.ArkavQuarium.Constants.*;
 
+
 public class Food extends Item {
     private int price;
 
