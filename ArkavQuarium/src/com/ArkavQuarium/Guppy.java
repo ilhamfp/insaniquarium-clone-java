@@ -8,10 +8,10 @@ public class Guppy extends Fish {
     private int foodCount;
     private int price;
     private int foodThreshold;
-    private double lastCoinTime;
-    private double coinInterval;
+    private long lastCoinTime;
+    private long coinInterval;
 
-    public Guppy(double time, double x, double y) {
+    public Guppy(long time, double x, double y) {
         super(time, x, y);
 
         growthStep = 1;
@@ -19,7 +19,7 @@ public class Guppy extends Fish {
         price = 25;
         foodThreshold = 3;
         lastCoinTime = 0;
-        coinInterval = 6.0;
+        coinInterval = 6000;
     }
 
     public int getGrowthStep() {
@@ -38,16 +38,16 @@ public class Guppy extends Fish {
         this.foodCount = foodCount;
     }
 
-    public double getLastCoinTime() {
+    public long getLastCoinTime() {
         return lastCoinTime;
     }
 
-    public void setLastCoinTime(double lastCoinTime) {
+    public void setLastCoinTime(long lastCoinTime) {
         this.lastCoinTime = lastCoinTime;
     }
 
     @Override
-    public void moveRandom(double time, Point max) {
+    public void moveRandom(long time, Point max) {
         double moveX, moveY, newRad;
 
         if (isTimeToChangeDirection(time)) {
@@ -79,7 +79,7 @@ public class Guppy extends Fish {
         setY(getY() + moveY);
     }
 
-    public void moveToEat(LinkedList<Food> listfood, Food food, double time) {
+    public void moveToEat(LinkedList<Food> listfood, Food food, long time) {
         if (food.findDistance(new Point(getX(), getY())) <= speed) {
             setX(food.getX());
             setY(food.getY());
@@ -103,7 +103,7 @@ public class Guppy extends Fish {
         }
     }
 
-    public boolean isTimeToGiveCoin(double time) {
+    public boolean isTimeToGiveCoin(long time) {
         boolean waktunya = (time - lastCoinTime) >= coinInterval;
         if (waktunya) { lastCoinTime = time; }
         return waktunya;
