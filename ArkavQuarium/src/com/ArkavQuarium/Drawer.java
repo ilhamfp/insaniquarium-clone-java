@@ -1,7 +1,6 @@
 package com.ArkavQuarium;
 import java.awt.*;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.awt.event.*;
 import javax.swing.*;
 
 public class Drawer {
@@ -10,8 +9,28 @@ public class Drawer {
     protected DrawPanel drawPanel;
     protected Aquarium aquarium;
     protected long time;
+    protected boolean menuState;
+
+    protected double xFood;
+    protected boolean newEgg;
+    protected boolean newFood;
+    protected boolean newGuppy;
+    protected boolean newPiranha;
+
+    protected boolean loadGame;
+    protected boolean saveGame;
 
     public void run() {
+
+        // initialize needed boolean
+        menuState = true;
+        newFood = false;
+        newGuppy = false;
+        newPiranha = false;
+        newEgg = false;
+        loadGame = false;
+        saveGame = false;
+
         aquarium = new Aquarium(1080, 720);
 
         frame = new JFrame("ArkavQuarium");
@@ -25,10 +44,59 @@ public class Drawer {
 
             @Override
             public void mousePressed(MouseEvent e) {
-                aquarium.createGuppy();
-                System.out.println(e.getX() + " " + e.getY());
+                if (menuState) {
+
+                    if ((e.getX() >= 600 && e.getX() <= 965) && (e.getY() >= 70 && e.getY() <= 170))
+                        menuState = false;
+                    if ((e.getX() >= 600 && e.getX() <= 965) && (e.getY() >= 212 && e.getY() <= 283)) {
+                        loadGame = true;
+                        menuState = false;
+                        // System.out.println("Load Game");
+                    }
+                    
+                } else {
+
+                    if (e.getY() > 140) {
+                        xFood = e.getX();
+                        newFood = true;
+                    }
+
+                    if ((e.getY() >= 37 && e.getY() <= 69) && (e.getX() >= 931 && e.getX() <= 1041))
+                        saveGame = true;
+                    // System.out.println("Game Saved");
+                }
+
+                // System.out.println(e.getX() + " " + e.getY());
             }
         });
+
+        drawPanel.addKeyListener(new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if (!menuState) {
+                    if (e.getKeyChar() == 'g') {
+                        newGuppy = true;
+                    } else if (e.getKeyChar() == 'p') {
+                        newPiranha = true;
+                    } else if (e.getKeyChar() == 'e') {
+                        newEgg = true;
+                    }
+                }
+
+                // System.out.println(e.getKeyChar());
+            }
+        });
+
+        drawPanel.setFocusable(true);
+        drawPanel.requestFocusInWindow();
 
         frame.setResizable(false);
         frame.setSize(1080, 720);
@@ -36,11 +104,15 @@ public class Drawer {
         frame.setVisible(true);
 
         while (true) {
-            aquarium.run();
+            aquarium.moveSnail();
+            aquarium.moveFood();
+            aquarium.moveCoin();
+            aquarium.movePiranha();
+            aquarium.moveGuppy();
 
-            System.out.println(aquarium.getListGuppy().getSize());
-            aquarium.getListGuppy().get(0).print();
-            moveAll();
+            updateAquarium();
+
+            frame.repaint();
         }
     }
 
@@ -49,59 +121,71 @@ public class Drawer {
     }
 
     public int getFrame() {
-        long temp = getTime() % 2500;
+        long temp = getTime() % 1500000000L;
 
-        if (temp >= 0 && temp < 250) return 0;
-        else if (temp >= 250 && temp < 500) return 1;
-        else if (temp >= 500 && temp < 750) return 2;
-        else if (temp >= 750 && temp < 1000) return 3;
-        else if (temp >= 1000 && temp < 1250) return 4;
-        else if (temp >= 1250 && temp < 1500) return 5;
-        else if (temp >= 1500 && temp < 1750) return 6;
-        else if (temp >= 1750 && temp < 2000) return 7;
-        else if (temp >= 2000 && temp < 2250) return 8;
+        if (temp >= 0 && temp < 150000000L) return 0;
+        else if (temp >= 150000000L && temp < 300000000L) return 1;
+        else if (temp >= 300000000L && temp < 450000000L) return 2;
+        else if (temp >= 450000000L && temp < 600000000L) return 3;
+        else if (temp >= 600000000L && temp < 750000000L) return 4;
+        else if (temp >= 750000000L && temp < 900000000L) return 5;
+        else if (temp >= 900000000L && temp < 1050000000L) return 6;
+        else if (temp >= 1050000000L && temp < 1200000000L) return 7;
+        else if (temp >= 1200000000L && temp < 1350000000L) return 8;
         else return 9;
     }
 
     class DrawPanel extends JPanel {
 
         private Image backgroundImage;
+        private Image mainMenu;
 
         public DrawPanel() {
             super();
+            loadMenu();
             loadBackground();
         }
 
         public void loadBackground() {
-            ImageIcon pp = new ImageIcon("src/com/ArkavQuarium/assets/img/aquarium.png");
-            backgroundImage = pp.getImage();
+            ImageIcon temp = new ImageIcon("src/com/ArkavQuarium/assets/img/aquarium.png");
+            backgroundImage = temp.getImage();
+        }
+
+        public void loadMenu() {
+            ImageIcon temp = new ImageIcon("src/com/ArkavQuarium/assets/img/mainmenu.png");
+            mainMenu = temp.getImage();
         }
 
         public void paintComponent(Graphics g) {
             super.paintComponent(g);
-            g.drawImage(backgroundImage, 0, 0, this);
+            if (menuState) {
+                g.drawImage(mainMenu, 0, 0, this);
+            } else {
+                g.drawImage(backgroundImage, 0, 0, this);
 
-            if (!aquarium.getListGuppy().isEmpty()) {
-                for (int i = 0; i < aquarium.getListGuppy().getSize(); i++) {
-                    drawGuppy(aquarium.getListGuppy().get(i), g);
+                if (!aquarium.getListGuppy().isEmpty()) {
+                    for (int i = 0; i < aquarium.getListGuppy().getSize(); i++) {
+                        drawGuppy(aquarium.getListGuppy().get(i), g);
+                    }
                 }
-            }
 
-            if (!aquarium.getListPiranha().isEmpty()) {
-                for (int i = 0; i < aquarium.getListPiranha().getSize(); i++) {
-                    drawPiranha(aquarium.getListPiranha().get(i), g);
+                if (!aquarium.getListPiranha().isEmpty()) {
+                    for (int i = 0; i < aquarium.getListPiranha().getSize(); i++) {
+                        drawPiranha(aquarium.getListPiranha().get(i), g);
+                    }
                 }
-            }
 
-            for (int i = 0; i < aquarium.getListFood().getSize(); i++) {
-                drawFood(aquarium.getListFood().get(i), g);
-            }
+                for (int i = 0; i < aquarium.getListFood().getSize(); i++) {
+                    drawFood(aquarium.getListFood().get(i), g);
+                }
 
-            for (int i = 0; i < aquarium.getListCoin().getSize(); i++) {
-                drawCoin(aquarium.getListCoin().get(i), g);
-            }
+                for (int i = 0; i < aquarium.getListCoin().getSize(); i++) {
+                    drawCoin(aquarium.getListCoin().get(i), g);
+                }
 
-            drawSnail(aquarium.getGarry(), g);
+                drawSnail(aquarium.getGarry(), g);
+
+            }
         }
 
         public void drawSnail(Snail snail, Graphics g) {
@@ -111,25 +195,25 @@ public class Drawer {
             int direction = snail.getDirection();
             String filename = "snail" + String.valueOf(fps);
 
-            if (direction == 1) filename = "src/com/ArkavQuarium/assets/img/r" + filename;
-            else filename = "src/com/ArkavQuarium/assets/img/" + filename;
+            if (direction == 1) filename = "src/com/ArkavQuarium/assets/img/r" + filename + ".png";
+            else filename = "src/com/ArkavQuarium/assets/img/" + filename + ".png";
 
             ImageIcon temp = new ImageIcon(filename);
             Image snailImage = temp.getImage();
 
-            g.drawImage(snailImage, (int)x, (int)y, this);
+            g.drawImage(snailImage, (int) x, (int) y, this);
         }
 
         public void drawFood(Food food, Graphics g) {
             int fps = getFrame();
             double x = food.getX();
             double y = food.getY();
-            String filename = "src/com/ArkavQuarium/assets/img/food" + String.valueOf(fps);
+            String filename = "src/com/ArkavQuarium/assets/img/food" + String.valueOf(fps) + ".png";
 
             ImageIcon temp = new ImageIcon(filename);
             Image foodImage = temp.getImage();
 
-            g.drawImage(foodImage, (int)x, (int)y, this);
+            g.drawImage(foodImage, (int) x, (int) y, this);
         }
 
         public void drawCoin(Coin coin, Graphics g) {
@@ -141,15 +225,15 @@ public class Drawer {
             double y = coin.getY();
             int level = coin.getValue() / coin.getBaseVal();
 
-            if (level == 1) filename = "src/com/ArkavQuarium/assets/img/b" + filename;
-            else if (level == 2) filename = "src/com/ArkavQuarium/assets/img/g" + filename;
-            else if (level == 3) filename = "src/com/ArkavQuarium/assets/img/s" + filename;
+            if (level == 1) filename = "src/com/ArkavQuarium/assets/img/b" + filename + ".png";
+            else if (level == 2) filename = "src/com/ArkavQuarium/assets/img/g" + filename + ".png";
+            else if (level == 3) filename = "src/com/ArkavQuarium/assets/img/s" + filename + ".png";
             else filename = "src/com/ArkavQuarium/assets/img/dcoin.png";
 
             ImageIcon temp = new ImageIcon(filename);
             Image coinImage = temp.getImage();
 
-            g.drawImage(coinImage, (int)x, (int)y, this);
+            g.drawImage(coinImage, (int) x, (int) y, this);
         }
 
         public void drawGuppy(Guppy guppy, Graphics g) {
@@ -171,7 +255,7 @@ public class Drawer {
             ImageIcon temp = new ImageIcon(filename);
             Image GuppyImage = temp.getImage();
 
-            g.drawImage(GuppyImage, (int)x, (int)y, this);
+            g.drawImage(GuppyImage, (int) x, (int) y, this);
         }
 
         public void drawPiranha(Piranha piranha, Graphics g) {
@@ -187,21 +271,37 @@ public class Drawer {
             ImageIcon temp = new ImageIcon(filename);
             Image piranhaImage = temp.getImage();
 
-            g.drawImage(piranhaImage, (int)x, (int)y, this);
+            g.drawImage(piranhaImage, (int) x, (int) y, this);
         }
 
     }
 
-    public void moveAll() {
-        frame.repaint();
-    }
+    public void updateAquarium() {
+        if (newFood) {
+            aquarium.createFood(new Point(xFood, 150));
+            System.out.println("FOOD " + aquarium.listFood.getSize());
+            newFood = false;
+        }
 
-/*
-    public static void main(String... args) {
-        new Drawer().run();
-    }
-*/
+        if (newGuppy) {
+            aquarium.createGuppy();
+            System.out.println("GUPPY " + aquarium.listGuppy.getSize());
+            newGuppy = false;
+        }
 
+        if (newPiranha) {
+            aquarium.createPiranha();
+            newPiranha = false;
+        }
+
+        if (newEgg) {
+        }
+        if (loadGame) {
+        }
+        if (saveGame) {
+        }
+
+    }
 }
 
 

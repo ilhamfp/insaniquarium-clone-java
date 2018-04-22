@@ -1,8 +1,6 @@
 package com.ArkavQuarium;
 import static com.ArkavQuarium.Constants.*;
 import java.util.Random;
-import javax.swing.*;
-import java.awt.*;
 
 public class Aquarium {
 
@@ -20,8 +18,6 @@ public class Aquarium {
     protected int foodPeriod;
     protected long startTime;
 
-    protected JFrame frame;
-
     public Aquarium(int screenWidth, int screenHeight) {
         startTime = System.nanoTime();
         maxLocation.setLocation((double)screenWidth, (double)screenHeight);
@@ -31,8 +27,7 @@ public class Aquarium {
         piranhaPeriod = 10;
         money = 200;
 
-        //
-        garry = new Snail(new Point((double)screenWidth/2,(double)screenHeight - 40.0));
+        garry = new Snail(new Point((double)screenWidth/2,(double)screenHeight - 68));
         Guppy firstGuppy = new Guppy(startTime,(double)screenWidth/2,(double)screenHeight/2);
         listGuppy.add(firstGuppy);
     }
@@ -41,10 +36,14 @@ public class Aquarium {
         this.money = money;
     }
 
+    public void setEgg(int egg) { this.egg = egg; }
+
     public long getCurrentTime() {
         long estimatedTime = System.nanoTime() - startTime;
         return estimatedTime;
     }
+
+    public int getEgg() { return egg; }
 
     public Point getMaxLocation() {
         return maxLocation;
@@ -71,21 +70,27 @@ public class Aquarium {
     }
 
     public void run() {
-
+        moveGuppy();
+        movePiranha();
+        moveCoin();
+        moveFood();
+        moveSnail();
     }
 
     public void createGuppy() {
+
         Random rand = new Random();
-        int x = rand.nextInt((int)maxLocation.getX()) + 1;
-        int y = rand.nextInt((int)maxLocation.getY()) + 1;
+        int x = rand.nextInt((int)maxLocation.getX() - 150 + 1) + 75;
+        int y = rand.nextInt((int)maxLocation.getY() - 250 + 1) + 150;
         Guppy guppy = new Guppy(getCurrentTime(), x, y);
         listGuppy.add(guppy);
     }
 
     public void createPiranha() {
+
         Random rand = new Random();
-        int x = rand.nextInt((int)maxLocation.getX()) + 1;
-        int y = rand.nextInt((int)maxLocation.getY()) + 1;
+        int x = rand.nextInt((int)maxLocation.getX() - 150 + 1) + 75;
+        int y = rand.nextInt((int)maxLocation.getY() - 250 + 1) + 150;
         Piranha piranha = new Piranha(getCurrentTime(), x, y);
         listPiranha.add(piranha);
     }
@@ -96,6 +101,7 @@ public class Aquarium {
     }
 
     public void createCoin(Point p, int level) {
+
         Coin coin = new Coin(p,level);
         listCoin.add(coin);
     }
@@ -249,9 +255,13 @@ public class Aquarium {
         }
     }
 
-//    public static void main(String[] args) {
-//        new Aquarium(1080,720).run();
-//    }
+    public void saveGame() {
+
+    }
+
+    public void loadGame() {
+
+    }
 
     public int getStateGame() {
         if (egg == 3) return 2;
