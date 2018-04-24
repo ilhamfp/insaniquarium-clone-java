@@ -1,8 +1,9 @@
 package com.ArkavQuarium;
 
+//import com.sun.xml.internal.bind.v2.model.core.EnumLeafInfo;
+
 public class LinkedList<T> {
     private Element<T> first;
-    private Element<T> last;
     private int size;
 
     // class element list
@@ -44,8 +45,6 @@ public class LinkedList<T> {
     public LinkedList() {
         Element<T> temp = new Element<T>();
         this.first = temp;
-        this.last = this.first;
-        this.size = 0;
     }
 
     /*** getter and setter ***/
@@ -68,12 +67,13 @@ public class LinkedList<T> {
     // add a data to linkedlist
     public void add(T data) {
         Element<T> tmp = new Element<T>(data);
-        if (this.first.getData() == null) {
-            this.first = tmp;
-            this.last = this.first;
-        } else {
-            this.last.setNext(tmp);
-            this.last = tmp;
+        if(isEmpty())
+            first = tmp;
+        else{
+            Element<T> it = first;
+            while(it.getNext() != null)
+                it = it.getNext();
+            it.setNext(tmp);
         }
         size++;
     }
@@ -81,30 +81,20 @@ public class LinkedList<T> {
     // remove a data from linkedlist
     public void remove(T data) {
         Element<T> curr = first;
-        if (this.first.getData().equals(data)) {
-            if (this.first.getNext() == null) {
-                Element<T> newNode = new Element<T>();
-                this.first = newNode;
-                this.last = this.first;
-            } else {
-                this.first.setData(null);
-                this.first = this.first.getNext();
+        boolean found = false;
+        while( curr.getNext() != null){
+            if(curr.getNext().getData().equals(data)){
+                found = true;
+                break;
             }
-            size --;
-        } else {
-            boolean deleted = false;
-            while (!deleted) {
-                Element<T> currNext = curr.getNext();
-                if (currNext.getData().equals(data)) {
-                    currNext.setData(null);
-                    curr.setNext(currNext.getNext());
-                    currNext = null;
-                    deleted = true;
-                    size--;
-                } else {
-                    curr = curr.getNext();
-                }
-            }
+            else
+                curr = curr.getNext();
         }
+
+        if(found){
+            Element<T> tmp = curr.getNext();
+            curr.setNext(curr.getNext().getNext());
+        }
+        size--;
     }
 }
