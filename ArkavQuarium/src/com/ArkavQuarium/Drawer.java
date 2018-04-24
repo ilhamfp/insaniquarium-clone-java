@@ -14,15 +14,11 @@ public class Drawer {
     protected MouseListener mouseListener;
     protected KeyListener keyListener;
 
-    protected boolean loadGame;
-    protected boolean saveGame;
     protected boolean jalan;
 
     public Drawer() {
 
         menuState = true;
-        loadGame = false;
-        saveGame = false;
         jalan = true;
 
         aquarium = new Aquarium(1080, 720);
@@ -47,7 +43,6 @@ public class Drawer {
                     if ((e.getX() >= 600 && e.getX() <= 965) && (e.getY() >= 212 && e.getY() <= 283)) {
                         String loadFilename= JOptionPane.showInputDialog("Please input file name for load: ");
                         System.out.println("Load Game");
-                        loadGame = true;
                         menuState = false;
                     }
 
@@ -58,9 +53,8 @@ public class Drawer {
                     }
 
                     if ((e.getY() >= 37 && e.getY() <= 69) && (e.getX() >= 931 && e.getX() <= 1041)){
-                        String loadFilename= JOptionPane.showInputDialog("Please input file name for load: ");
+                        String saveFilename= JOptionPane.showInputDialog("Please input file name for save: ");
                         System.out.println("Game Saved");
-                        saveGame = true;
 
                     }
 

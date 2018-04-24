@@ -258,12 +258,12 @@ public class Aquarium {
         }
     }
 
-    public void saveGame() {
+    public void saveGame(String saveFilename) {
 
     }
 
-    public void loadGame() {
-
+    public void loadGame(String loadFilename) {
+        
     }
 
     public int getStateGame() {
