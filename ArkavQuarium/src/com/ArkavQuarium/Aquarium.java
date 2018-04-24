@@ -176,6 +176,7 @@ public class Aquarium {
                 listGuppy.remove(listGuppy.get(i));
             } else {
                 if (listGuppy.get(i).isTimeToGiveCoin(getCurrentTime())) {
+                    System.out.println("COIN COIN COIN");
                     Coin coin = new Coin(new Point(listGuppy.get(i).getX(), listGuppy.get(i).getY()), listGuppy.get(i).getGrowthStep());
                     listCoin.add(coin);
                 }

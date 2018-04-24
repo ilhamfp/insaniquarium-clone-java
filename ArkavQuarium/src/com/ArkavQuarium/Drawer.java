@@ -89,7 +89,7 @@ public class Drawer {
                 if (!menuState) {
                     if (e.getKeyChar() == 'g') {
                         aquarium.createGuppy();
-                        System.out.println("GUPP = " + aquarium.getListGuppy().getSize());
+                        //System.out.println("GUPP = " + aquarium.getListGuppy().getSize());
                     } else if (e.getKeyChar() == 'p') {
                         aquarium.createPiranha();
                     } else if (e.getKeyChar() == 'e') {
@@ -233,17 +233,18 @@ public class Drawer {
         }
 
         public void drawCoin(Coin coin, Graphics g) {
-
+            System.out.println("Gambar coin");
             int fps = getFrame();
+            System.out.println("Gambar coin " + fps);
             String filename = "coin" + String.valueOf(fps) + ".png";
 
             double x = coin.getX();
             double y = coin.getY();
             int level = coin.getValue() / coin.getBaseVal();
 
-            if (level == 1) filename = "src/com/ArkavQuarium/assets/img/b" + filename + ".png";
-            else if (level == 2) filename = "src/com/ArkavQuarium/assets/img/g" + filename + ".png";
-            else if (level == 3) filename = "src/com/ArkavQuarium/assets/img/s" + filename + ".png";
+            if (level == 1) filename = "src/com/ArkavQuarium/assets/img/b" + filename;
+            else if (level == 2) filename = "src/com/ArkavQuarium/assets/img/g" + filename;
+            else if (level == 3) filename = "src/com/ArkavQuarium/assets/img/s" + filename;
             else filename = "src/com/ArkavQuarium/assets/img/dcoin.png";
 
             ImageIcon temp = new ImageIcon(filename);
