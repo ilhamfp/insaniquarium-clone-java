@@ -229,7 +229,7 @@ public class Drawer {
         public void drawSnail(Snail snail, Graphics g) {
             int fps = getFrame();
             double x = snail.getX();
-            double y = snail.getY();
+            double y = snail.getY()-40;
             int direction = snail.getDirection();
             String filename = "snail" + String.valueOf(fps);
 

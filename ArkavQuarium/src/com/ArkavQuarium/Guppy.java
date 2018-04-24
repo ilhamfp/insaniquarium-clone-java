@@ -17,7 +17,7 @@ public class Guppy extends Fish {
 
         growthStep = 1;
         foodCount = 0;
-        lastCoinTime = 0;
+        lastCoinTime = time;
         foodThreshold = GUPPY_FOOD_THRESHOLD;
         price = GUPPY_PRICE;
         coinInterval = GUPPY_COIN_INTERVAL;
