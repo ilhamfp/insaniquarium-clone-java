@@ -1,6 +1,8 @@
 package com.ArkavQuarium;
 import java.awt.*;
 import java.awt.event.*;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import javax.swing.*;
 
 public class Drawer {
@@ -15,11 +17,13 @@ public class Drawer {
     protected KeyListener keyListener;
 
     protected boolean jalan;
+    protected boolean savingFile;
 
     public Drawer() {
 
         menuState = true;
         jalan = true;
+        savingFile = false;
 
         aquarium = new Aquarium(1080, 720);
 
@@ -40,9 +44,11 @@ public class Drawer {
 
                     if ((e.getX() >= 600 && e.getX() <= 965) && (e.getY() >= 70 && e.getY() <= 170))
                         menuState = false;
+                        aquarium.createGuppy();
                     if ((e.getX() >= 600 && e.getX() <= 965) && (e.getY() >= 212 && e.getY() <= 283)) {
-                        String loadFilename= JOptionPane.showInputDialog("Please input file name for load: ");
+                        String loadFilename = JOptionPane.showInputDialog("Please input file name for load: ");
                         System.out.println("Load Game");
+                        aquarium.loadGame((loadFilename));
                         menuState = false;
                     }
 
@@ -53,8 +59,7 @@ public class Drawer {
                     }
 
                     if ((e.getY() >= 37 && e.getY() <= 69) && (e.getX() >= 931 && e.getX() <= 1041)){
-                        String saveFilename= JOptionPane.showInputDialog("Please input file name for save: ");
-                        System.out.println("Game Saved");
+                        savingFile = true;
 
                     }
 
@@ -133,8 +138,15 @@ public class Drawer {
 
     public void run() {
 
+//        while (menuState){}
         while (jalan) {
             frame.repaint();
+            if (savingFile){
+                String saveFilename= JOptionPane.showInputDialog("Please input file name for save: ");
+                System.out.println("Game Saved to"+saveFilename);
+                aquarium.saveGame(saveFilename);
+                savingFile = false;
+            }
         }
 
         //Exit window
@@ -249,9 +261,9 @@ public class Drawer {
         }
 
         public void drawCoin(Coin coin, Graphics g) {
-            System.out.println("Gambar coin");
+//            System.out.println("Gambar coin");
             int fps = getFrame();
-            System.out.println("Gambar coin " + fps);
+//            System.out.println("Gambar coin " + fps);
             String filename = "coin" + String.valueOf(fps) + ".png";
 
             double x = coin.getX();

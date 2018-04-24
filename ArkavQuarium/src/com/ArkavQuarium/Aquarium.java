@@ -28,8 +28,6 @@ public class Aquarium {
         money = 200;
 
         garry = new Snail(new Point((double)screenWidth/2,(double)screenHeight - 68));
-        Guppy firstGuppy = new Guppy(getCurrentTime(),(double)screenWidth/2,(double)screenHeight/2);
-        listGuppy.add(firstGuppy);
     }
 
     public void setMoney(int money) {
