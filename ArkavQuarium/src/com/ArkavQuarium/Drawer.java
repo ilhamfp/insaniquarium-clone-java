@@ -16,12 +16,14 @@ public class Drawer {
 
     protected boolean loadGame;
     protected boolean saveGame;
+    protected boolean jalan;
 
     public Drawer() {
 
         menuState = true;
         loadGame = false;
         saveGame = false;
+        jalan = true;
 
         aquarium = new Aquarium(1080, 720);
 
@@ -43,9 +45,10 @@ public class Drawer {
                     if ((e.getX() >= 600 && e.getX() <= 965) && (e.getY() >= 70 && e.getY() <= 170))
                         menuState = false;
                     if ((e.getX() >= 600 && e.getX() <= 965) && (e.getY() >= 212 && e.getY() <= 283)) {
+                        String loadFilename= JOptionPane.showInputDialog("Please input file name for load: ");
+                        System.out.println("Load Game");
                         loadGame = true;
                         menuState = false;
-                        // System.out.println("Load Game");
                     }
 
                 } else {
@@ -54,9 +57,14 @@ public class Drawer {
                         aquarium.createFood(new Point(e.getX(), 150));
                     }
 
-                    if ((e.getY() >= 37 && e.getY() <= 69) && (e.getX() >= 931 && e.getX() <= 1041))
+                    if ((e.getY() >= 37 && e.getY() <= 69) && (e.getX() >= 931 && e.getX() <= 1041)){
+                        String loadFilename= JOptionPane.showInputDialog("Please input file name for load: ");
+                        System.out.println("Game Saved");
                         saveGame = true;
-                    // System.out.println("Game Saved");
+
+                    }
+
+
                 }
 
                 // System.out.println(e.getX() + " " + e.getY());
@@ -94,7 +102,18 @@ public class Drawer {
                         aquarium.createPiranha();
                     } else if (e.getKeyChar() == 'e') {
                         // add egg
+                    } else if (e.getKeyChar() == 'x') {
+                        JDialog.setDefaultLookAndFeelDecorated(true);
+                        int response = JOptionPane.showConfirmDialog(null, "Do you want to exit?", "Exit",
+                                JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+                        if (response == JOptionPane.NO_OPTION) {
+                        } else if (response == JOptionPane.YES_OPTION) {
+                            jalan = false;
+                        } else if (response == JOptionPane.CLOSED_OPTION) {
+                        }
                     }
+
+
                 }
             }
 
@@ -120,9 +139,12 @@ public class Drawer {
 
     public void run() {
 
-        while (true) {
+        while (jalan) {
             frame.repaint();
         }
+
+        //Exit window
+        frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
     }
 
     public double getTime() {
