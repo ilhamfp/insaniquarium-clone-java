@@ -7,14 +7,14 @@ public class Piranha extends Fish {
 
     private int price;
 
-    public Piranha(long time, double x, double y) {
+    public Piranha(double time, double x, double y) {
         super(time, x, y);
         setSpeed(getSpeed() + 0.000005);
         price = PIRANHA_PRICE;
     }
 
     @Override
-    public void moveRandom(long time, Point max) {
+    public void moveRandom(double time, Point max) {
         double moveX, moveY, newRad;
 
         if (isTimeToChangeDirection(time)) {
@@ -46,7 +46,7 @@ public class Piranha extends Fish {
         setY(getY() + moveY);
     }
 
-    public void moveToEat(LinkedList<Guppy> listguppy, Guppy guppy, long time) {
+    public void moveToEat(LinkedList<Guppy> listguppy, Guppy guppy, double time) {
         if (guppy.findDistance(new Point(getX(), getY())) <= speed) {
             setX(guppy.getX());
             setY(guppy.getY());

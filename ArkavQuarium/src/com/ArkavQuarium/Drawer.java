@@ -11,11 +11,8 @@ public class Drawer {
     protected long time;
     protected boolean menuState;
 
-    protected double xFood;
-    protected boolean newEgg;
-    protected boolean newFood;
-    protected boolean newGuppy;
-    protected boolean newPiranha;
+    protected MouseListener mouseListener;
+    protected KeyListener keyListener;
 
     protected boolean loadGame;
     protected boolean saveGame;
@@ -23,10 +20,6 @@ public class Drawer {
     public Drawer() {
 
         menuState = true;
-        newFood = false;
-        newGuppy = false;
-        newPiranha = false;
-        newEgg = false;
         loadGame = false;
         saveGame = false;
 
@@ -37,7 +30,7 @@ public class Drawer {
 
         drawPanel = new DrawPanel();
 
-        MouseListener mouseListener = new MouseListener() {
+        mouseListener = new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {
 
@@ -59,8 +52,6 @@ public class Drawer {
 
                     if (e.getY() > 140) {
                         aquarium.createFood(new Point(e.getX(), 150));
-
-                        System.out.println("FOOD " + aquarium.listFood.getSize());
                     }
 
                     if ((e.getY() >= 37 && e.getY() <= 69) && (e.getX() >= 931 && e.getX() <= 1041))
@@ -87,7 +78,7 @@ public class Drawer {
             }
         };
 
-        KeyListener keyListener = new KeyListener() {
+        keyListener = new KeyListener() {
             @Override
             public void keyTyped(KeyEvent e) {
 
@@ -98,14 +89,13 @@ public class Drawer {
                 if (!menuState) {
                     if (e.getKeyChar() == 'g') {
                         aquarium.createGuppy();
+                        System.out.println("GUPP = " + aquarium.getListGuppy().getSize());
                     } else if (e.getKeyChar() == 'p') {
                         aquarium.createPiranha();
                     } else if (e.getKeyChar() == 'e') {
-                        newEgg = true;
+                        // add egg
                     }
                 }
-
-                // System.out.println(e.getKeyChar());
             }
 
             @Override
@@ -125,35 +115,32 @@ public class Drawer {
         frame.setLocationByPlatform(true);
         frame.setVisible(true);
 
-
         frame.add(drawPanel);
     }
 
     public void run() {
-
-        // initialize needed boolean
 
         while (true) {
             frame.repaint();
         }
     }
 
-    public long getTime() {
+    public double getTime() {
         return aquarium.getCurrentTime();
     }
 
     public int getFrame() {
-        long temp = getTime() % 1500000000L;
+        double temp = getTime() % 1.5;
 
-        if (temp >= 0 && temp < 150000000L) return 0;
-        else if (temp >= 150000000L && temp < 300000000L) return 1;
-        else if (temp >= 300000000L && temp < 450000000L) return 2;
-        else if (temp >= 450000000L && temp < 600000000L) return 3;
-        else if (temp >= 600000000L && temp < 750000000L) return 4;
-        else if (temp >= 750000000L && temp < 900000000L) return 5;
-        else if (temp >= 900000000L && temp < 1050000000L) return 6;
-        else if (temp >= 1050000000L && temp < 1200000000L) return 7;
-        else if (temp >= 1200000000L && temp < 1350000000L) return 8;
+        if (temp >= 0 && temp < 0.15) return 0;
+        else if (temp >= 0.15 && temp < 0.3) return 1;
+        else if (temp >= 0.3 && temp < 0.45) return 2;
+        else if (temp >= 0.45 && temp < 0.6) return 3;
+        else if (temp >= 0.6 && temp < 0.75) return 4;
+        else if (temp >= 0.75 && temp < 0.9) return 5;
+        else if (temp >= 0.9 && temp < 1.05) return 6;
+        else if (temp >= 1.05 && temp < 1.2) return 7;
+        else if (temp >= 1.2 && temp < 0.135) return 8;
         else return 9;
     }
 
@@ -299,31 +286,8 @@ public class Drawer {
             g.drawImage(piranhaImage, (int) x, (int) y, this);
         }
 
-    }
+        public void updateAquarium() {
 
-    public void updateAquarium() {
-        if (newFood) {
-            aquarium.createFood(new Point(xFood, 150));
-            System.out.println("FOOD " + aquarium.listFood.getSize());
-            newFood = false;
-        }
-
-        if (newGuppy) {
-            aquarium.createGuppy();
-            // System.out.println("GUPPY " + aquarium.listGuppy.getSize());
-            newGuppy = false;
-        }
-
-        if (newPiranha) {
-            aquarium.createPiranha();
-            newPiranha = false;
-        }
-
-        if (newEgg) {
-        }
-        if (loadGame) {
-        }
-        if (saveGame) {
         }
 
     }

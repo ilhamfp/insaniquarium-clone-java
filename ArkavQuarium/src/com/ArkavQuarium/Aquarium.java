@@ -38,9 +38,11 @@ public class Aquarium {
 
     public void setEgg(int egg) { this.egg = egg; }
 
-    public long getCurrentTime() {
+    public double getCurrentTime() {
         long estimatedTime = System.nanoTime() - startTime;
-        return estimatedTime;
+
+        double seconds = estimatedTime / 1000000000.0;
+        return seconds;
     }
 
     public int getEgg() { return egg; }

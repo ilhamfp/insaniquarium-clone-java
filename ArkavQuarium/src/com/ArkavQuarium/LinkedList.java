@@ -45,6 +45,7 @@ public class LinkedList<T> {
         Element<T> temp = new Element<T>();
         this.first = temp;
         this.last = this.first;
+        this.size = 0;
     }
 
     /*** getter and setter ***/
