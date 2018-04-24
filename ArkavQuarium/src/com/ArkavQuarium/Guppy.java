@@ -81,6 +81,7 @@ public class Guppy extends Fish {
     }
 
     public void moveToEat(LinkedList<Food> listfood, Food food, double time) {
+        System.out.println("MELBU COK");
         if (food.findDistance(new Point(getX(), getY())) <= speed) {
             setX(food.getX());
             setY(food.getY());

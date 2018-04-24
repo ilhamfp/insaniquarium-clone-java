@@ -7,8 +7,8 @@ public final class Constants {
     public static final double ITEM_SPEED = 0.6;
     public static final double COIN_RADIUS = 25.0;
     public static final double FISH_SPEED = 0.5;
-    public static final double FISH_HUNGRY_CONSTRAINT = 10;
-    public static final double FISH_FULL_CONSTRAINT = 6;
+    public static final double FISH_HUNGRY_CONSTRAINT = 15;
+    public static final double FISH_FULL_CONSTRAINT = 1;
     public static final double FISH_CHANGE_DIR_INTERVAL = 2.5;
     public static final int GUPPY_PRICE = 25;
     public static final int GUPPY_FOOD_THRESHOLD = 3;

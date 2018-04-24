@@ -167,7 +167,11 @@ public class Drawer {
 
         public void paintComponent(Graphics g) {
 
-            aquarium.run();
+            aquarium.moveGuppy();
+            aquarium.movePiranha();
+            aquarium.moveCoin();
+            aquarium.moveFood();
+            aquarium.moveSnail();
 
             super.paintComponent(g);
             if (menuState) {

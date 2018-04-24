@@ -28,7 +28,7 @@ public class Aquarium {
         money = 200;
 
         garry = new Snail(new Point((double)screenWidth/2,(double)screenHeight - 68));
-        Guppy firstGuppy = new Guppy(startTime,(double)screenWidth/2,(double)screenHeight/2);
+        Guppy firstGuppy = new Guppy(getCurrentTime(),(double)screenWidth/2,(double)screenHeight/2);
         listGuppy.add(firstGuppy);
     }
 
@@ -111,10 +111,10 @@ public class Aquarium {
     public Point getClosestFood(Point p) {
         if (!listFood.isEmpty()) {
             Point temp = new Point(listFood.get(0).getX(), listFood.get(0).getY());
-            for (int i = 0; i < listCoin.getSize(); i++) {
-                if (p.findDistance(listCoin.get(i)) < p.findDistance(temp)) {
-                    temp.setX(listCoin.get(i).getX());
-                    temp.setY(listCoin.get(i).getY());
+            for (int i = 0; i < listFood.getSize(); i++) {
+                if (p.findDistance(listFood.get(i)) < p.findDistance(temp)) {
+                    temp.setX(listFood.get(i).getX());
+                    temp.setY(listFood.get(i).getY());
                 }
             }
             return temp;
@@ -180,7 +180,7 @@ public class Aquarium {
                     listCoin.add(coin);
                 }
 
-                if (listFood.getSize() > 0 && listGuppy.get(i).isHungry(getCurrentTime())) {
+                if (!listFood.isEmpty() && listGuppy.get(i).isHungry(getCurrentTime())) {
                     locGuppy.setX(listGuppy.get(i).getX());
                     locGuppy.setY(listGuppy.get(i).getY());
                     Point temp = getClosestFood(locGuppy);
