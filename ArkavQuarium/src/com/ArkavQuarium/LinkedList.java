@@ -81,19 +81,26 @@ public class LinkedList<T> {
     // remove a data from linkedlist
     public void remove(T data) {
         Element<T> curr = first;
+        Element<T> before = first;
         boolean found = false;
-        while( curr.getNext() != null){
-            if(curr.getNext().getData().equals(data)){
-                found = true;
-                break;
-            }
-            else
-                curr = curr.getNext();
-        }
 
-        if(found){
-            Element<T> tmp = curr.getNext();
-            curr.setNext(curr.getNext().getNext());
+        if(data.equals(first.getData())){
+            first = first.getNext();
+        }
+        else{
+            while( curr.getNext() != null){
+                if(curr.getNext().getData().equals(data)){
+                    found = true;
+                    break;
+                }
+                else
+                    curr = curr.getNext();
+            }
+
+            if(found){
+                Element<T> tmp = curr.getNext();
+                curr.setNext(curr.getNext().getNext());
+            }
         }
         size--;
     }
