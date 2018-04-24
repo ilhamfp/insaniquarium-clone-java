@@ -20,9 +20,8 @@ public class Drawer {
     protected boolean loadGame;
     protected boolean saveGame;
 
-    public void run() {
+    public Drawer() {
 
-        // initialize needed boolean
         menuState = true;
         newFood = false;
         newGuppy = false;
@@ -38,9 +37,11 @@ public class Drawer {
 
         drawPanel = new DrawPanel();
 
-        frame.add(drawPanel);
+        MouseListener mouseListener = new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
 
-        drawPanel.addMouseListener(new MouseAdapter() {
+            }
 
             @Override
             public void mousePressed(MouseEvent e) {
@@ -53,12 +54,13 @@ public class Drawer {
                         menuState = false;
                         // System.out.println("Load Game");
                     }
-                    
+
                 } else {
 
                     if (e.getY() > 140) {
-                        xFood = e.getX();
-                        newFood = true;
+                        aquarium.createFood(new Point(e.getX(), 150));
+
+                        System.out.println("FOOD " + aquarium.listFood.getSize());
                     }
 
                     if ((e.getY() >= 37 && e.getY() <= 69) && (e.getX() >= 931 && e.getX() <= 1041))
@@ -68,24 +70,36 @@ public class Drawer {
 
                 // System.out.println(e.getX() + " " + e.getY());
             }
-        });
 
-        drawPanel.addKeyListener(new KeyListener() {
             @Override
-            public void keyTyped(KeyEvent e) {
+            public void mouseReleased(MouseEvent e) {
+
             }
 
             @Override
-            public void keyReleased(KeyEvent e) {
+            public void mouseEntered(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+
+            }
+        };
+
+        KeyListener keyListener = new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+
             }
 
             @Override
             public void keyPressed(KeyEvent e) {
                 if (!menuState) {
                     if (e.getKeyChar() == 'g') {
-                        newGuppy = true;
+                        aquarium.createGuppy();
                     } else if (e.getKeyChar() == 'p') {
-                        newPiranha = true;
+                        aquarium.createPiranha();
                     } else if (e.getKeyChar() == 'e') {
                         newEgg = true;
                     }
@@ -93,7 +107,15 @@ public class Drawer {
 
                 // System.out.println(e.getKeyChar());
             }
-        });
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+
+            }
+        };
+
+        drawPanel.addMouseListener(mouseListener);
+        drawPanel.addKeyListener(keyListener);
 
         drawPanel.setFocusable(true);
         drawPanel.requestFocusInWindow();
@@ -103,15 +125,15 @@ public class Drawer {
         frame.setLocationByPlatform(true);
         frame.setVisible(true);
 
+
+        frame.add(drawPanel);
+    }
+
+    public void run() {
+
+        // initialize needed boolean
+
         while (true) {
-            aquarium.moveSnail();
-            aquarium.moveFood();
-            aquarium.moveCoin();
-            aquarium.movePiranha();
-            aquarium.moveGuppy();
-
-            updateAquarium();
-
             frame.repaint();
         }
     }
@@ -157,6 +179,9 @@ public class Drawer {
         }
 
         public void paintComponent(Graphics g) {
+
+            aquarium.run();
+
             super.paintComponent(g);
             if (menuState) {
                 g.drawImage(mainMenu, 0, 0, this);
@@ -285,7 +310,7 @@ public class Drawer {
 
         if (newGuppy) {
             aquarium.createGuppy();
-            System.out.println("GUPPY " + aquarium.listGuppy.getSize());
+            // System.out.println("GUPPY " + aquarium.listGuppy.getSize());
             newGuppy = false;
         }
 
