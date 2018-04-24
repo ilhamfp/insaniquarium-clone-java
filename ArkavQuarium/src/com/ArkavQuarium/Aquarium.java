@@ -131,6 +131,7 @@ public class Aquarium {
                     temp.setY(listCoin.get(i).getY());
                 }
             }
+            return temp;
         }
         return new Point(0,0);
     }

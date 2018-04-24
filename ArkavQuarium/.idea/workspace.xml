@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9c72f64-3e9f-4b23-aedd-a3db3f1ae9ec" name="Default" comment="">
+    <list default="true" id="fab94596-4bde-4e66-8de2-eaac5d6e9018" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Aquarium.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Aquarium.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer$DrawPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer$DrawPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Aquarium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ArkavQuarium/Aquarium.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Drawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ArkavQuarium/Drawer.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Aquarium.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Aquarium.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Aquarium.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="264" column="44" selection-start-line="264" selection-start-column="44" selection-end-line="264" selection-end-column="44" />
+            <state relative-caret-position="242">
+              <caret line="266" column="8" selection-start-line="266" selection-start-column="8" selection-end-line="266" selection-end-column="8" />
               <folding>
                 <element signature="e#1201#1202#0" expanded="true" />
                 <element signature="e#1235#1236#0" expanded="true" />
@@ -71,30 +73,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Arquillian JUnit Test Class" />
-        <option value="JUnit5 Test Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>create</find>
-      <find>load</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -106,9 +90,9 @@
         <option value="$PROJECT_DIR$/src/com/ArkavQuarium/test/DrawerTest.java" />
         <option value="$PROJECT_DIR$/src/com/ArkavQuarium/Main.java" />
         <option value="$PROJECT_DIR$/src/com/ArkavQuarium/LinkedList.java" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/com/ArkavQuarium/Drawer.java" />
         <option value="$PROJECT_DIR$/src/com/ArkavQuarium/Aquarium.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -330,28 +314,8 @@
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="All_Unit_tests - 2018.04.22 at 01h 23m 24s.xml">
-      <configuration name="All Unit tests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_Unit_tests - 2018.04.22 at 01h 42m 23s.xml">
-      <configuration name="All Unit tests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_Unit_tests - 2018.04.22 at 02h 07m 06s.xml">
-      <configuration name="All Unit tests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GuppyTest_testMoveToEat - 2018.04.24 at 23h 58m 37s.xml">
-      <configuration name="GuppyTest.testMoveToEat" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GuppyTest_testMoveToEat - 2018.04.24 at 23h 58m 42s.xml">
-      <configuration name="GuppyTest.testMoveToEat" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_Unit_tests - 2018.04.24 at 23h 58m 51s.xml">
-      <configuration name="All Unit tests" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7403000" />
+    <option name="totallyTimeSpent" value="7644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -367,11 +331,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18730651" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18730651" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -440,9 +404,6 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14051522" />
     </layout-to-restore>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -785,13 +746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -829,14 +783,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Aquarium.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="264" column="44" selection-start-line="264" selection-start-column="44" selection-end-line="264" selection-end-column="44" />
+        <state relative-caret-position="242">
+          <caret line="266" column="8" selection-start-line="266" selection-start-column="8" selection-end-line="266" selection-end-column="8" />
           <folding>
             <element signature="e#1201#1202#0" expanded="true" />
             <element signature="e#1235#1236#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
