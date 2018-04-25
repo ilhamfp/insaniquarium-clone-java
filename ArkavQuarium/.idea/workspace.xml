@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="494dcfb4-a796-4021-8ec5-013379d29208" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/arkavquarium/Drawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Drawer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Aquarium.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Aquarium.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer$DrawPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer$DrawPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Fish.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Fish.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/LinkedList$Element.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/LinkedList$Element.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/LinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/AquariumTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/AquariumTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/GuppyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/GuppyTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/ItemTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/ItemTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/PiranhaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/PiranhaTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/arkavquarium/Bool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Bool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/arkavquarium/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/arkavquarium/Fish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Fish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/arkavquarium/Guppy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Guppy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/arkavquarium/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/arkavquarium/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/arkavquarium/Piranha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Piranha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/arkavquarium/Snail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Snail.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,30 +41,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Drawer.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Drawer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="class#824:2336" />
-                <element signature="method#mouseClicked#0;class#824:2336" />
-                <element signature="method#mouseReleased#0;class#824:2336" />
-                <element signature="method#mouseEntered#0;class#824:2336" />
-                <element signature="method#mouseExited#0;class#824:2336" />
-                <element signature="method#keyTyped#0;class#2365:3717" />
-                <element signature="method#keyReleased#0;class#2365:3717" />
-                <element signature="method#DrawPanel#0;class#DrawPanel#0;class#Drawer#0" />
-                <element signature="method#loadBackground#0;class#DrawPanel#0;class#Drawer#0" />
-                <element signature="method#loadMenu#0;class#DrawPanel#0;class#Drawer#0" />
-                <element signature="method#paintComponent#0;class#DrawPanel#0;class#Drawer#0" />
-                <element signature="method#drawFood#0;class#DrawPanel#0;class#Drawer#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Item.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -69,6 +65,11 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="Coin.java" pinned="false" current-in-tab="false">
@@ -112,8 +113,8 @@
       <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="83" selection-start-line="83" selection-end-line="83" />
+            <state relative-caret-position="213">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
             </state>
           </provider>
         </entry>
@@ -132,7 +133,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/ArkavQuarium/Drawer.java" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/com/ArkavQuarium/Item.java" />
         <option value="$PROJECT_DIR$/src/com/arkavQuarium/Item.java" />
         <option value="$PROJECT_DIR$/src/com/arkavquarium/Item.java" />
@@ -141,6 +141,7 @@
         <option value="$PROJECT_DIR$/src/com/arkavquarium/Coin.java" />
         <option value="$PROJECT_DIR$/src/com/arkavquarium/Food.java" />
         <option value="$PROJECT_DIR$/src/com/arkavquarium/Drawer.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -152,12 +153,6 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1346" />
-    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -201,11 +196,6 @@
       </pane>
       <pane id="AndroidView" />
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -367,12 +357,12 @@
       <workItem from="1524629611530" duration="1742000" />
       <workItem from="1524650312633" duration="708000" />
       <workItem from="1524651070425" duration="928000" />
-      <workItem from="1524652052051" duration="4310000" />
+      <workItem from="1524652052051" duration="4610000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5776000" />
+    <option name="totallyTimeSpent" value="6076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -397,9 +387,9 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.17817014" />
-      <window_info active="true" anchor="bottom" id="CheckStyle" order="12" visible="true" weight="0.3611557" />
+      <window_info anchor="bottom" id="CheckStyle" order="12" visible="true" weight="0.3611557" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1913767" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1913767" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32744783" />
       <window_info id="Learn" order="5" />
       <window_info anchor="right" id="Theme Preview" order="5" />
@@ -415,11 +405,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="3" />
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Item.java">
@@ -563,13 +548,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4335">
-          <caret line="255" column="39" lean-forward="true" selection-start-line="255" selection-start-column="39" selection-end-line="255" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -753,8 +731,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="213">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
@@ -773,6 +751,43 @@
             <element signature="e#548#549#0" expanded="true" />
             <element signature="e#871#872#0" expanded="true" />
             <element signature="e#930#931#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Coin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Drawer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#824:2336" />
+            <element signature="method#mouseClicked#0;class#824:2336" />
+            <element signature="method#mouseReleased#0;class#824:2336" />
+            <element signature="method#mouseEntered#0;class#824:2336" />
+            <element signature="method#mouseExited#0;class#824:2336" />
+            <element signature="method#keyTyped#0;class#2365:3717" />
+            <element signature="method#keyReleased#0;class#2365:3717" />
+            <element signature="method#DrawPanel#0;class#DrawPanel#0;class#Drawer#0" />
+            <element signature="method#loadBackground#0;class#DrawPanel#0;class#Drawer#0" />
+            <element signature="method#loadMenu#0;class#DrawPanel#0;class#Drawer#0" />
+            <element signature="method#paintComponent#0;class#DrawPanel#0;class#Drawer#0" />
+            <element signature="method#drawFood#0;class#DrawPanel#0;class#Drawer#0" />
           </folding>
         </state>
       </provider>
@@ -799,42 +814,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Coin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Drawer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#824:2336" />
-            <element signature="method#mouseClicked#0;class#824:2336" />
-            <element signature="method#mouseReleased#0;class#824:2336" />
-            <element signature="method#mouseEntered#0;class#824:2336" />
-            <element signature="method#mouseExited#0;class#824:2336" />
-            <element signature="method#keyTyped#0;class#2365:3717" />
-            <element signature="method#keyReleased#0;class#2365:3717" />
-            <element signature="method#DrawPanel#0;class#DrawPanel#0;class#Drawer#0" />
-            <element signature="method#loadBackground#0;class#DrawPanel#0;class#Drawer#0" />
-            <element signature="method#loadMenu#0;class#DrawPanel#0;class#Drawer#0" />
-            <element signature="method#paintComponent#0;class#DrawPanel#0;class#Drawer#0" />
-            <element signature="method#drawFood#0;class#DrawPanel#0;class#Drawer#0" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
