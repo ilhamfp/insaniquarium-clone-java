@@ -1,10 +1,7 @@
 package com.arkavquarium;
 
-import static com.arkavquarium.Constants.GUPPY_COIN_INTERVAL;
-import static com.arkavquarium.Constants.GUPPY_FOOD_THRESHOLD;
-import static com.arkavquarium.Constants.GUPPY_PRICE;
-
 import java.lang.Math;
+import static com.arkavquarium.Constants.*;
 
 public class Guppy extends Fish {
 

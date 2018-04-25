@@ -1,8 +1,8 @@
 package com.arkavquarium;
 
-import static com.arkavquarium.Constants.PIRANHA_PRICE;
-
 import java.lang.Math;
+
+import static com.arkavquarium.Constants.*;
 
 public class Piranha extends Fish {
 
