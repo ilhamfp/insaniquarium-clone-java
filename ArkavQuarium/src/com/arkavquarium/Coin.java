@@ -1,34 +1,42 @@
 package com.arkavquarium;
-import static com.arkavquarium.Constants.*;
+
+import static com.arkavquarium.Constants.COIN_BASE_VALUE;
 
 public class Coin extends Item {
-    private int baseVal;
-    private int value;
+  private int baseVal;
+  private int value;
 
-    public Coin(){
-        super(-1,-1);
-        baseVal = COIN_BASE_VALUE;
-        value = 0;
-    }
+  /**
+   * Constructor coin.
+   */
+  public Coin() {
+    super(-1,-1);
+    baseVal = COIN_BASE_VALUE;
+    value = 0;
+  }
 
-    public Coin(Point p, int level){
-        super(p.getX(),p.getY());
-        baseVal = COIN_BASE_VALUE;
-        value = baseVal*level;
-    }
+  /**
+   * Constructor coin.
+   * @param p poin tempat coin dihasilkan
+   * @param level level untuk menentukan coin
+   */
+  public Coin(Point p, int level) {
+    super(p.getX(),p.getY());
+    baseVal = COIN_BASE_VALUE;
+    value = baseVal * level;
+  }
 
-    /*** setter, getter ***/
-    // setter untuk nilai value
-    public void setValue(int val){
-        value = val;
-    }
+  // setter untuk nilai value
+  public void setValue(int val) {
+    value = val;
+  }
 
-    // getter untuk nilai value
-    public int getValue(){
-        return value;
-    }
+  // getter untuk nilai value
+  public int getValue() {
+    return value;
+  }
 
-    public int getBaseVal(){
-        return baseVal;
-    }
+  public int getBaseVal() {
+    return baseVal;
+  }
 }

@@ -38,7 +38,9 @@ public class Point implements Serializable {
   }
 
   /**
-   * @param Point yang ingin diukur jaraknya dengan.
+   * Mencari jarak antara titik ini dan titik input.
+   *
+   * @param p yang ingin diukur jaraknya dengan.
    * @return Jarak antara titik .
    */
   public double findDistance(Point p) {

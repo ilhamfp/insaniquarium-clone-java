@@ -1,9 +1,8 @@
 package com.arkavquarium;
 
-import static com.arkavquarium.Constants.*;
+import static com.arkavquarium.Constants.FOOD_PRICE;
 
 public class Food extends Item {
-
   private int price;
 
   public Food() {
