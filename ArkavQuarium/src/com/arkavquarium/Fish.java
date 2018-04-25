@@ -1,6 +1,9 @@
 package com.arkavquarium;
 
-import static com.arkavquarium.Constants.*;
+import static com.arkavquarium.Constants.FISH_CHANGE_DIR_INTERVAL;
+import static com.arkavquarium.Constants.FISH_FULL_CONSTRAINT;
+import static com.arkavquarium.Constants.FISH_HUNGRY_CONSTRAINT;
+import static com.arkavquarium.Constants.FISH_SPEED;
 
 import java.lang.Math;
 import java.util.Random;

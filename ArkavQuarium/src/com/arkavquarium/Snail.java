@@ -64,7 +64,7 @@ public class Snail extends Point {
     } else {
       setX(getX() - speed);
     }
-    if (this.equals(P)) {
+    if (this.equals(p)) {
       eat.setValue(true);
     } else {
       eat.setValue(false);
