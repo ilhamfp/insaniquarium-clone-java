@@ -143,9 +143,9 @@ public abstract class Fish extends Point {
    */
   public boolean isInsideAquarium(double x, double y, Point max) {
     return x >= 20.0
-          && x <= (max.getX() - 20.0)
+          && x <= (max.getX() - 50.0)
           && y >= 150.0
-          && y <= (max.getY() - 40.0);
+          && y <= (max.getY() - 68.0);
   }
 
   public boolean isHungry(double time) {

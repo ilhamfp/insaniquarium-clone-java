@@ -7,6 +7,7 @@ import com.arkavquarium.Piranha;
 import com.arkavquarium.Point;
 import com.arkavquarium.Guppy;
 import com.arkavquarium.LinkedList;
+import com.arkavquarium.Bool;
 
 class PiranhaTest {
     @Test
@@ -21,6 +22,7 @@ class PiranhaTest {
 
     @Test
     public void testMoveToEat() {
+        Bool eat = new Bool();
         long time = 0;
         Piranha piranha = new Piranha(time, 30.0, 40.0);
         Guppy guppy = new Guppy(time,50.0, 60.0);
@@ -28,7 +30,7 @@ class PiranhaTest {
         listOfGuppy.add(guppy);
 
         while (!listOfGuppy .isEmpty()) {
-            piranha.moveToEat(listOfGuppy, guppy, time);
+            piranha.moveToEat(listOfGuppy, guppy, time, eat);
             time++;
         }
 

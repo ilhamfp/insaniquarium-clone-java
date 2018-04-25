@@ -57,19 +57,37 @@ public class Drawer {
           }
         } else {
 
-          if (e.getY() > 140) {
-            int money = aquarium.getMoney();
-            if (money >= FOOD_PRICE) {
-              money -= FOOD_PRICE;
-              aquarium.setMoney(money);
-              aquarium.createFood(new Point(e.getX(), 150));
+          int money = aquarium.getMoney();
+          Point pNow =  new Point(e.getX(), e.getY());
+          Point closestCoin = aquarium.getClosestCoin(pNow);
+          if (pNow.findDistance(closestCoin) <= COIN_RADIUS && aquarium.getListCoin().getSize() > 0) {
+            System.out.println("MELBU 1");
+            for (int i = 1; i <= aquarium.getListCoin().getSize(); i++)
+              if (aquarium.getListCoin().get(i).equals(closestCoin)) {
+                System.out.println("MELBU 2");
+                int val = aquarium.getGarry().takeCoin(aquarium.getListCoin(), aquarium.getListCoin().get(i));
+
+                // Coin coin = aquarium.getListCoin().get(i);
+                // aquarium.getListCoin().remove(coin);
+                aquarium.setMoney(money + val);
+                break;
+              }
+          } else {
+            if (e.getY() > 140 && e.getX() < 1030) {
+
+              if (money >= FOOD_PRICE) {
+                money -= FOOD_PRICE;
+                aquarium.setMoney(money);
+                aquarium.createFood(new Point(e.getX(), 150));
+              }
+            }
+
+            if ((e.getY() >= 37 && e.getY() <= 69) && (e.getX() >= 931 && e.getX() <= 1041)) {
+              savingFile = true;
+
             }
           }
 
-          if ((e.getY() >= 37 && e.getY() <= 69) && (e.getX() >= 931 && e.getX() <= 1041)) {
-            savingFile = true;
-
-          }
         }
         // System.out.println(e.getX() + " " + e.getY());
       }

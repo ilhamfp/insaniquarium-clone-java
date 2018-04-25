@@ -67,12 +67,13 @@ public class Piranha extends Fish {
    * @param guppy = guppy to be eaten
    * @param time = time now
    */
-  public void moveToEat(LinkedList<Guppy> listguppy, Guppy guppy, double time) {
+  public void moveToEat(LinkedList<Guppy> listguppy, Guppy guppy, double time, Bool eat) {
     if (guppy.findDistance(new Point(getX(), getY())) <= speed) {
       setX(guppy.getX());
       setY(guppy.getY());
       lastEaten = time;
       listguppy.remove(guppy);
+      eat.setValue(true);
     } else {
       double rad = Math.atan2((guppy.getY() - getY()), (guppy.getX() - getX()));
       double moveX = speed * Math.cos(rad);

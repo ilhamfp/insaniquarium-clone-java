@@ -88,6 +88,8 @@ public class Aquarium implements Serializable {
     return listFood;
   }
 
+  public void setListCoin(LinkedList<Coin> listCoin1) { listCoin = listCoin1; }
+
   /**
    * run the living in aquarium.
    */
@@ -209,7 +211,8 @@ public class Aquarium implements Serializable {
         for (int i = 0; i < listCoin.getSize(); i++) {
           if (listCoin.get(i).getX() == closest.getX()
               && listCoin.get(i).getY() == closest.getY()) {
-            garry.takeCoin(listCoin, listCoin.get(i));
+            int val = garry.takeCoin(listCoin, listCoin.get(i));
+            setMoney(money + val);
           }
         }
       }
@@ -282,9 +285,10 @@ public class Aquarium implements Serializable {
             if (listGuppy.get(idx).getX() == closest.getX()
                 && listGuppy.get(idx).getY() == closest.getY()) {
               guppyGrowth = listGuppy.get(idx).getGrowthStep();
-              listPiranha.get(i).moveToEat(listGuppy, listGuppy.get(idx), getCurrentTime());
+              listPiranha.get(i).moveToEat(listGuppy, listGuppy.get(idx), getCurrentTime(), eat);
 
               if (eat.getValue()) {
+                System.out.println("MELBU COK");
                 guppyGrowth++;
                 Coin coin = new Coin(closest, guppyGrowth);
                 listCoin.add(coin);
