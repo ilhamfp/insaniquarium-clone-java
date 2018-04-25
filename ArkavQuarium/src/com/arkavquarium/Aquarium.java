@@ -88,7 +88,9 @@ public class Aquarium implements Serializable {
     return listFood;
   }
 
-  public void setListCoin(LinkedList<Coin> listCoin1) { listCoin = listCoin1; }
+  public void setListCoin(LinkedList<Coin> listCoin1) {
+    listCoin = listCoin1;
+  }
 
   /**
    * run the living in aquarium.
