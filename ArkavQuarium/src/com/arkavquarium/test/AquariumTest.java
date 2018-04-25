@@ -29,8 +29,10 @@ class AquariumTest {
 
   public void testGetClosestCoin() {
     Aquarium aquarium = new Aquarium(680,720);
-    aquarium.createCoin(new Point(10.0,10.0), 1);
-    Point closest = aquarium.getClosestCoin(new Point())
+    Point coin = new Point(10.0,10.0);
+    aquarium.createCoin(coin, 1);
+    Point closest = aquarium.getClosestCoin(new Point(11.0, 11.0));
+    assertEquals(closest.getX(), );
   }
 
 }

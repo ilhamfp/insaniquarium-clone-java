@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85fef50f-43d7-42ad-a453-02a006497989" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/AllTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/AllTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/All_Unit_tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/All_Unit_tests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/arkavquarium/test/AquariumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/test/AquariumTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -47,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/test/AquariumTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
-              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+              <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,7 +104,7 @@
       <file leaf-file-name="Aquarium.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Aquarium.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
+            <state relative-caret-position="-671">
               <caret line="137" column="22" selection-start-line="137" selection-start-column="14" selection-end-line="137" selection-end-column="22" />
             </state>
           </provider>
@@ -375,7 +371,7 @@
       <workItem from="1524652052051" duration="4610000" />
       <workItem from="1524659568705" duration="603000" />
       <workItem from="1524660259860" duration="124000" />
-      <workItem from="1524666554645" duration="1273000" />
+      <workItem from="1524666554645" duration="1471000" />
     </task>
     <servers />
   </component>
@@ -412,7 +408,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11747000" />
+    <option name="totallyTimeSpent" value="11945000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -811,7 +807,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Aquarium.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
+        <state relative-caret-position="-671">
           <caret line="137" column="22" selection-start-line="137" selection-start-column="14" selection-end-line="137" selection-end-column="22" />
         </state>
       </provider>
@@ -819,7 +815,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/test/AquariumTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
-          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
