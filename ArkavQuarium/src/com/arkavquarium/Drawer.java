@@ -1,13 +1,12 @@
 package com.arkavquarium;
 
-import static com.arkavquarium.Constants.FISH_CHANGE_DIR_INTERVAL;
-import static com.arkavquarium.Constants.FISH_HUNGRY_CONSTRAINT;
-
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
 import java.util.Random;
 import javax.swing.*;
+
+import static com.arkavquarium.Constants.*;
 
 public class Drawer {
   protected JFrame frame;
@@ -59,7 +58,12 @@ public class Drawer {
         } else {
 
           if (e.getY() > 140) {
-            aquarium.createFood(new Point(e.getX(), 150));
+            int money = aquarium.getMoney();
+            if (money >= FOOD_PRICE) {
+              money -= FOOD_PRICE;
+              aquarium.setMoney(money);
+              aquarium.createFood(new Point(e.getX(), 150));
+            }
           }
 
           if ((e.getY() >= 37 && e.getY() <= 69) && (e.getX() >= 931 && e.getX() <= 1041)) {
@@ -94,13 +98,30 @@ public class Drawer {
       @Override
       public void keyPressed(KeyEvent e) {
         if (!menuState) {
+          int money = aquarium.getMoney();
           if (e.getKeyChar() == 'g') {
-            aquarium.createGuppy();
-            //System.out.println("GUPP = " + aquarium.getListGuppy().getSize());
+            if (money >= GUPPY_PRICE) {
+              money -= GUPPY_PRICE;
+              aquarium.setMoney(money);
+              aquarium.createGuppy();
+            }
+
           } else if (e.getKeyChar() == 'p') {
-            aquarium.createPiranha();
+            if (money >= PIRANHA_PRICE) {
+              money -= PIRANHA_PRICE;
+              aquarium.setMoney(money);
+              aquarium.createPiranha();
+            }
+
           } else if (e.getKeyChar() == 'e') {
-            // add egg
+            int egg = aquarium.getEgg();
+            if (money >= EGG_PRICE) {
+              egg++;
+              money -= EGG_PRICE;
+              aquarium.setEgg(egg);
+              aquarium.setMoney(money);
+            }
+
           } else if (e.getKeyChar() == 'x') {
             JDialog.setDefaultLookAndFeelDecorated(true);
             int response = JOptionPane.showConfirmDialog(null, "Do you want to exit?", "Exit", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
@@ -111,6 +132,8 @@ public class Drawer {
             } else if (response == JOptionPane.CLOSED_OPTION) {
               //dummy line
             }
+          } else if (e.getKeyChar() == 'q') {
+            aquarium.setMoney(9999999);
           }
         }
       }
@@ -187,11 +210,15 @@ public class Drawer {
   class DrawPanel extends JPanel {
     private Image backgroundImage;
     private Image mainMenu;
+    private Image winImage;
+    private Image loseImage;
 
     public DrawPanel() {
       super();
       loadMenu();
       loadBackground();
+      loadWin();
+      loadLose();
     }
 
     public void loadBackground() {
@@ -204,6 +231,16 @@ public class Drawer {
       mainMenu = temp.getImage();
     }
 
+    public void loadWin() {
+      ImageIcon temp = new ImageIcon("src/com/arkavquarium/assets/img/win.png");
+      winImage = temp.getImage();
+    }
+
+    public void loadLose() {
+      ImageIcon temp = new ImageIcon("src/com/arkavquarium/assets/img/lose.png");
+      loseImage = temp.getImage();
+    }
+
     public void paintComponent(Graphics g) {
       aquarium.moveGuppy();
       aquarium.movePiranha();
@@ -212,33 +249,58 @@ public class Drawer {
       aquarium.moveSnail();
 
       super.paintComponent(g);
-      if (menuState) {
-        g.drawImage(mainMenu, 0, 0, this);
+
+      int state = aquarium.getStateGame();
+      if (state == 2) {
+        g.drawImage(winImage, 0, 0, this);
+      } else if (state == 1) {
+        g.drawImage(loseImage, 0, 0, this);
       } else {
-        g.drawImage(backgroundImage, 0, 0, this);
+        if (menuState) {
+          g.drawImage(mainMenu, 0, 0, this);
+        } else {
 
-        if (!aquarium.getListGuppy().isEmpty()) {
-          for (int i = 0; i < aquarium.getListGuppy().getSize(); i++) {
-            drawGuppy(aquarium.getListGuppy().get(i), g);
+          g.drawImage(backgroundImage, 0, 0, this);
+
+          Font font = null;
+          try {
+            font=Font.createFont( Font.TRUETYPE_FONT,
+                new FileInputStream(new File("src/com/ArkavQuarium/assets/fonts/OpenSans-Regular.ttf")) );
+          } catch (Exception e) {
+            System.out.println(e);
           }
-        }
+          font = font.deriveFont(Font.PLAIN, 25);
+          g.setFont(font);
+          String money = Integer.toString(aquarium.getMoney());
+          String egg = Integer.toString(aquarium.getEgg());
+          g.drawString(egg, 831, 70);
+          g.drawString(money, 950, 115);
 
-        if (!aquarium.getListPiranha().isEmpty()) {
-          for (int i = 0; i < aquarium.getListPiranha().getSize(); i++) {
-            drawPiranha(aquarium.getListPiranha().get(i), g);
+          if (!aquarium.getListGuppy().isEmpty()) {
+            for (int i = 0; i < aquarium.getListGuppy().getSize(); i++) {
+              drawGuppy(aquarium.getListGuppy().get(i), g);
+            }
           }
-        }
 
-        for (int i = 0; i < aquarium.getListFood().getSize(); i++) {
-          drawFood(aquarium.getListFood().get(i), g);
-        }
+          if (!aquarium.getListPiranha().isEmpty()) {
+            for (int i = 0; i < aquarium.getListPiranha().getSize(); i++) {
+              drawPiranha(aquarium.getListPiranha().get(i), g);
+            }
+          }
 
-        for (int i = 0; i < aquarium.getListCoin().getSize(); i++) {
-          drawCoin(aquarium.getListCoin().get(i), g);
+          for (int i = 0; i < aquarium.getListFood().getSize(); i++) {
+            drawFood(aquarium.getListFood().get(i), g);
+          }
+
+          for (int i = 0; i < aquarium.getListCoin().getSize(); i++) {
+            drawCoin(aquarium.getListCoin().get(i), g);
+          }
+          drawSnail(aquarium.getGarry(), g);
         }
-        drawSnail(aquarium.getGarry(), g);
       }
     }
+
+
 
     public void drawSnail(Snail snail, Graphics g) {
       int fps = getFrame();
