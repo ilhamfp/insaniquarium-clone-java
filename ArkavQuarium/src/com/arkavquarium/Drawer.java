@@ -216,6 +216,7 @@ public class Drawer {
     private Image mainMenu;
     private Image winImage;
     private Image loseImage;
+    private Font font;
 
     public DrawPanel() {
       super();
@@ -223,6 +224,19 @@ public class Drawer {
       loadBackground();
       loadWin();
       loadLose();
+      loadFont();
+    }
+
+    public void loadFont() {
+      font = null;
+      try {
+        font=Font.createFont( Font.TRUETYPE_FONT,
+            new FileInputStream(new File("src/com/ArkavQuarium/assets/fonts/OpenSans-Regular.ttf")) );
+      } catch (Exception e) {
+        System.out.println(e);
+      }
+      font = font.deriveFont(Font.PLAIN, 25);
+
     }
 
     public void loadBackground() {
@@ -266,14 +280,6 @@ public class Drawer {
 
           g.drawImage(backgroundImage, 0, 0, this);
 
-          Font font = null;
-          try {
-            font=Font.createFont( Font.TRUETYPE_FONT,
-                new FileInputStream(new File("src/com/ArkavQuarium/assets/fonts/OpenSans-Regular.ttf")) );
-          } catch (Exception e) {
-            System.out.println(e);
-          }
-          font = font.deriveFont(Font.PLAIN, 25);
           g.setFont(font);
           String money = Integer.toString(aquarium.getMoney());
           String egg = Integer.toString(aquarium.getEgg());
