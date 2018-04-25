@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="494dcfb4-a796-4021-8ec5-013379d29208" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/arkavquarium/Coin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Coin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/arkavquarium/Drawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Drawer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arkavquarium/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Food.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/arkavquarium/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Point.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,11 +24,10 @@
       <file leaf-file-name="Drawer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Drawer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="198" column="5" lean-forward="true" selection-start-line="198" selection-start-column="5" selection-end-line="198" selection-end-column="5" />
+            <state relative-caret-position="218">
+              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#Drawer#0;class#Drawer#0" />
                 <element signature="class#824:2336" />
                 <element signature="method#mouseClicked#0;class#824:2336" />
                 <element signature="method#mouseReleased#0;class#824:2336" />
@@ -39,18 +35,11 @@
                 <element signature="method#mouseExited#0;class#824:2336" />
                 <element signature="method#keyTyped#0;class#2365:3717" />
                 <element signature="method#keyReleased#0;class#2365:3717" />
-                <element signature="method#run#0;class#Drawer#0" />
-                <element signature="method#getFrame#0;class#Drawer#0" />
                 <element signature="method#DrawPanel#0;class#DrawPanel#0;class#Drawer#0" />
                 <element signature="method#loadBackground#0;class#DrawPanel#0;class#Drawer#0" />
                 <element signature="method#loadMenu#0;class#DrawPanel#0;class#Drawer#0" />
                 <element signature="method#paintComponent#0;class#DrawPanel#0;class#Drawer#0" />
-                <element signature="method#drawSnail#0;class#DrawPanel#0;class#Drawer#0" />
                 <element signature="method#drawFood#0;class#DrawPanel#0;class#Drawer#0" />
-                <element signature="method#drawCoin#0;class#DrawPanel#0;class#Drawer#0" />
-                <element signature="method#drawGuppy#0;class#DrawPanel#0;class#Drawer#0" />
-                <element signature="method#drawPiranha#0;class#DrawPanel#0;class#Drawer#0" />
-                <element signature="method#saveGame#0;class#Drawer#0" />
               </folding>
             </state>
           </provider>
@@ -378,12 +367,12 @@
       <workItem from="1524629611530" duration="1742000" />
       <workItem from="1524650312633" duration="708000" />
       <workItem from="1524651070425" duration="928000" />
-      <workItem from="1524652052051" duration="3671000" />
+      <workItem from="1524652052051" duration="4310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5137000" />
+    <option name="totallyTimeSpent" value="5776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -429,7 +418,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -827,11 +816,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Drawer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="198" column="5" lean-forward="true" selection-start-line="198" selection-start-column="5" selection-end-line="198" selection-end-column="5" />
+        <state relative-caret-position="218">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#Drawer#0;class#Drawer#0" />
             <element signature="class#824:2336" />
             <element signature="method#mouseClicked#0;class#824:2336" />
             <element signature="method#mouseReleased#0;class#824:2336" />
@@ -839,18 +827,11 @@
             <element signature="method#mouseExited#0;class#824:2336" />
             <element signature="method#keyTyped#0;class#2365:3717" />
             <element signature="method#keyReleased#0;class#2365:3717" />
-            <element signature="method#run#0;class#Drawer#0" />
-            <element signature="method#getFrame#0;class#Drawer#0" />
             <element signature="method#DrawPanel#0;class#DrawPanel#0;class#Drawer#0" />
             <element signature="method#loadBackground#0;class#DrawPanel#0;class#Drawer#0" />
             <element signature="method#loadMenu#0;class#DrawPanel#0;class#Drawer#0" />
             <element signature="method#paintComponent#0;class#DrawPanel#0;class#Drawer#0" />
-            <element signature="method#drawSnail#0;class#DrawPanel#0;class#Drawer#0" />
             <element signature="method#drawFood#0;class#DrawPanel#0;class#Drawer#0" />
-            <element signature="method#drawCoin#0;class#DrawPanel#0;class#Drawer#0" />
-            <element signature="method#drawGuppy#0;class#DrawPanel#0;class#Drawer#0" />
-            <element signature="method#drawPiranha#0;class#DrawPanel#0;class#Drawer#0" />
-            <element signature="method#saveGame#0;class#Drawer#0" />
           </folding>
         </state>
       </provider>
