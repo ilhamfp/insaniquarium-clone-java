@@ -14,7 +14,7 @@ public class Snail extends Point{
 
     // Constructor
     public  Snail(Point P){
-        super(P.getX()/2, P.getY()-40.0);
+        super(P.getX()/2, P.getY());
         speed = 0.5;
         direction = 1;
     }

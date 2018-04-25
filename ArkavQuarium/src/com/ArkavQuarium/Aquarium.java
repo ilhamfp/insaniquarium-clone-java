@@ -40,7 +40,7 @@ public class Aquarium implements Serializable {
     public double getCurrentTime() {
         long estimatedTime = System.nanoTime() - startTime;
 
-        double seconds = estimatedTime / 1000000000.0;
+        double seconds = (double)estimatedTime / 1000000000.0;
         return seconds;
     }
 
@@ -244,13 +244,13 @@ public class Aquarium implements Serializable {
 
     public void moveCoin() {
         for (int i = 0; i < listCoin.getSize(); i++) {
-            listCoin.get(i).move(maxLocation.getY());
+            listCoin.get(i).move(maxLocation.getY()-68);
         }
     }
 
     public void moveFood() {
         for (int i = 0; i < listFood.getSize(); i++) {
-            listFood.get(i).move(maxLocation.getY());
+            listFood.get(i).move(maxLocation.getY()-68);
 
             if (listFood.get(i).isAtBottom(maxLocation.getY())) {
                 listFood.remove(listFood.get(i));
