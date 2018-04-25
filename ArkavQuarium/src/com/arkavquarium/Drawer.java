@@ -103,7 +103,11 @@ public class Drawer {
             // add egg
           } else if (e.getKeyChar() == 'x') {
             JDialog.setDefaultLookAndFeelDecorated(true);
-            int response = JOptionPane.showConfirmDialog(null, "Do you want to exit?", "Exit", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+            int response = JOptionPane.showConfirmDialog(null,
+                "Do you want to exit?",
+                "Exit",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.QUESTION_MESSAGE);
             if (response == JOptionPane.NO_OPTION) {
               //dummy line
             } else if (response == JOptionPane.YES_OPTION) {
@@ -380,9 +384,10 @@ public class Drawer {
         for (int i = 0; i < aquarium.getListGuppy().getSize(); i++) {
           double randomNumber1 = 0 + (FISH_HUNGRY_CONSTRAINT - 1 - 0) * r.nextDouble();
           double randomNumber2 = 0 + (FISH_CHANGE_DIR_INTERVAL - 1 - 0) * r.nextDouble();
-          aquarium.getListGuppy().get(i).setLastEaten(aquarium.getCurrentTime());
-          aquarium.getListGuppy().get(i).setLastCoinTime(aquarium.getCurrentTime() - randomNumber1);
-          aquarium.getListGuppy().get(i).setLastChangeDir(aquarium.getCurrentTime() - randomNumber2);
+          Guppy curGuppy = aquarium.getListGuppy().get(i);
+          curGuppy.setLastEaten(aquarium.getCurrentTime());
+          curGuppy.setLastCoinTime(aquarium.getCurrentTime() - randomNumber1);
+          curGuppy.setLastChangeDir(aquarium.getCurrentTime() - randomNumber2);
         }
       }
 
