@@ -126,9 +126,11 @@ public class Drawer {
             JDialog.setDefaultLookAndFeelDecorated(true);
             int response = JOptionPane.showConfirmDialog(null, "Do you want to exit?", "Exit", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
             if (response == JOptionPane.NO_OPTION) {
+              //dummy line
             } else if (response == JOptionPane.YES_OPTION) {
               jalan = false;
             } else if (response == JOptionPane.CLOSED_OPTION) {
+              //dummy line
             }
           } else if (e.getKeyChar() == 'q') {
             aquarium.setMoney(9999999);
@@ -161,9 +163,9 @@ public class Drawer {
   public void run() {
     while (jalan) {
       frame.repaint();
-      if (savingFile){
-        String saveFilename= JOptionPane.showInputDialog("Please input file name for save: ");
-        System.out.println("Game Saved to"+saveFilename);
+      if (savingFile) {
+        String saveFilename = JOptionPane.showInputDialog("Please input file name for save: ");
+        System.out.println("Game Saved to" + saveFilename);
         saveGame(saveFilename);
         savingFile = false;
       }
@@ -176,37 +178,31 @@ public class Drawer {
     return aquarium.getCurrentTime();
   }
 
+  /**
+   * Fungsi untuk mengambil frame sekarang.
+   */
   public int getFrame() {
     double temp = getTime() % 1.5;
 
     if (temp >= 0 && temp < 0.15) {
       return 0;
-    }
-    else if (temp >= 0.15 && temp < 0.3) {
+    } else if (temp >= 0.15 && temp < 0.3) {
       return 1;
-    }
-    else if (temp >= 0.3 && temp < 0.45) {
+    } else if (temp >= 0.3 && temp < 0.45) {
       return 2;
-    }
-    else if (temp >= 0.45 && temp < 0.6) {
+    } else if (temp >= 0.45 && temp < 0.6) {
       return 3;
-    }
-    else if (temp >= 0.6 && temp < 0.75) {
+    } else if (temp >= 0.6 && temp < 0.75) {
       return 4;
-    }
-    else if (temp >= 0.75 && temp < 0.9) {
+    } else if (temp >= 0.75 && temp < 0.9) {
       return 5;
-    }
-    else if (temp >= 0.9 && temp < 1.05) {
+    } else if (temp >= 0.9 && temp < 1.05) {
       return 6;
-    }
-    else if (temp >= 1.05 && temp < 1.2) {
+    } else if (temp >= 1.05 && temp < 1.2) {
       return 7;
-    }
-    else if (temp >= 1.2 && temp < 1.35) {
+    } else if (temp >= 1.2 && temp < 1.35) {
       return 8;
-    }
-    else {
+    } else {
       return 9;
     }
   }
@@ -309,14 +305,13 @@ public class Drawer {
     public void drawSnail(Snail snail, Graphics g) {
       int fps = getFrame();
       double x = snail.getX();
-      double y = snail.getY()-40;
+      double y = snail.getY() - 40;
       int direction = snail.getDirection();
       String filename = "snail" + String.valueOf(fps);
 
       if (direction == 1) {
         filename = "src/com/arkavquarium/assets/img/r" + filename + ".png";
-      }
-      else {
+      } else {
         filename = "src/com/arkavquarium/assets/img/" + filename + ".png";
       }
 
@@ -348,14 +343,11 @@ public class Drawer {
 
       if (level == 1) {
         filename = "src/com/arkavquarium/assets/img/b" + filename;
-      }
-      else if (level == 2) {
+      } else if (level == 2) {
         filename = "src/com/arkavquarium/assets/img/g" + filename;
-      }
-      else if (level == 3) {
+      } else if (level == 3) {
         filename = "src/com/arkavquarium/assets/img/s" + filename;
-      }
-      else {
+      } else {
         filename = "src/com/arkavquarium/assets/img/dcoin.png";
       }
 
@@ -373,23 +365,24 @@ public class Drawer {
       double x = guppy.getX();
       double y = guppy.getY();
 
-      if (direction == 1) filename = "src/com/arkavquarium/assets/img/rguppy" + String.valueOf(fps);
-      else filename = "src/com/arkavquarium/assets/img/guppy" + String.valueOf(fps);
+      if (direction == 1) {
+        filename = "src/com/arkavquarium/assets/img/rguppy" + String.valueOf(fps);
+      } else {
+        filename = "src/com/arkavquarium/assets/img/guppy" + String.valueOf(fps);
+      }
 
       if (level == 1) {
         filename += ".png";
-      }
-      else if (level == 2) {
+      } else if (level == 2) {
         filename += "1.png";
-      }
-      else if (level == 3) {
+      } else if (level == 3) {
         filename += "2.png";
       }
 
       ImageIcon temp = new ImageIcon(filename);
-      Image GuppyImage = temp.getImage();
+      Image guppyImage = temp.getImage();
 
-      g.drawImage(GuppyImage, (int) x, (int) y, this);
+      g.drawImage(guppyImage, (int) x, (int) y, this);
     }
 
     public void drawPiranha(Piranha piranha, Graphics g) {
@@ -401,8 +394,7 @@ public class Drawer {
 
       if (direction == 1) {
         filename = "src/com/arkavquarium/assets/img/rpiranha" + String.valueOf(fps) + ".png";
-      }
-      else {
+      } else {
         filename = "src/com/arkavquarium/assets/img/piranha" + String.valueOf(fps) + ".png";
       }
 
@@ -413,6 +405,11 @@ public class Drawer {
     }
 
   }
+
+  /**
+   * Fungsi untuk menyimpan game.
+   * @param saveFilename bernilai nama file hasil save.
+   */
   public void saveGame(String saveFilename) {
     try {
       FileOutputStream fos = new FileOutputStream(saveFilename);
@@ -429,6 +426,10 @@ public class Drawer {
 
   }
 
+  /**
+   * Fungsi untuk memuat data game.
+   * @param loadFilename berisi string nama file yang berisi data untuk dimuat.
+   */
   public void loadGame(String loadFilename) {
     try {
       FileInputStream fis = new FileInputStream(loadFilename);
@@ -439,11 +440,11 @@ public class Drawer {
       Random r = new Random();
       if (!aquarium.getListGuppy().isEmpty()) {
         for (int i = 0; i < aquarium.getListGuppy().getSize(); i++) {
-          double randomNumber1 = 0 + (FISH_HUNGRY_CONSTRAINT-1 - 0) * r.nextDouble();
-          double randomNumber2 = 0 + (FISH_CHANGE_DIR_INTERVAL-1 - 0) * r.nextDouble();
+          double randomNumber1 = 0 + (FISH_HUNGRY_CONSTRAINT - 1 - 0) * r.nextDouble();
+          double randomNumber2 = 0 + (FISH_CHANGE_DIR_INTERVAL - 1 - 0) * r.nextDouble();
           aquarium.getListGuppy().get(i).setLastEaten(aquarium.getCurrentTime());
-          aquarium.getListGuppy().get(i).setLastCoinTime(aquarium.getCurrentTime()-randomNumber1);
-          aquarium.getListGuppy().get(i).setLastChangeDir(aquarium.getCurrentTime()-randomNumber2);
+          aquarium.getListGuppy().get(i).setLastCoinTime(aquarium.getCurrentTime() - randomNumber1);
+          aquarium.getListGuppy().get(i).setLastChangeDir(aquarium.getCurrentTime() - randomNumber2);
         }
       }
 
