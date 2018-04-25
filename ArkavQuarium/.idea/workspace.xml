@@ -2,218 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="494dcfb4-a796-4021-8ec5-013379d29208" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Aquarium.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Aquarium.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Bool.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Bool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Coin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Coin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer$DrawPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer$DrawPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Fish.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Fish.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Food.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Food.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Guppy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Guppy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/LinkedList$Element.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/LinkedList$Element.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/LinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Piranha.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Piranha.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Snail.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Snail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/AquariumTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/AquariumTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/CoinTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/CoinTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/DrawerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/DrawerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/FoodTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/FoodTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/GuppyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/GuppyTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/ItemTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/ItemTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/LinkedListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/LinkedListTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/PiranhaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/PiranhaTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/PointTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/PointTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/SnailTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/test/SnailTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Aquarium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Aquarium.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Bool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Bool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Coin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Coin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Drawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Drawer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Fish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Fish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Food.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Guppy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Guppy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Piranha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Piranha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Snail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Snail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/fonts/OpenSans-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/fonts/OpenSans-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/25237.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/25237.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/aquarium.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/aquarium.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/bcoin0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/bcoin0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/bcoin1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/bcoin1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/bcoin2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/bcoin2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/bcoin3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/bcoin3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/bcoin4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/bcoin4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/bcoin5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/bcoin5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/bcoin6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/bcoin6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/bcoin7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/bcoin7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/bcoin8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/bcoin8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/bcoin9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/bcoin9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/coin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/coin.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/coin2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/coin2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/coin3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/coin3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/dcoin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/dcoin.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/food0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/food0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/food1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/food1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/food2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/food2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/food3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/food3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/food4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/food4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/food5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/food5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/food6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/food6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/food7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/food7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/food8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/food8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/food9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/food9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/gcoin0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/gcoin0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/gcoin1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/gcoin1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/gcoin2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/gcoin2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/gcoin3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/gcoin3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/gcoin4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/gcoin4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/gcoin5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/gcoin5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/gcoin6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/gcoin6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/gcoin7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/gcoin7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/gcoin8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/gcoin8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/gcoin9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/gcoin9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy01.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy02.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy11.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy12.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy21.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy21.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy22.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy22.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy31.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy31.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy32.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy41.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy41.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy42.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy42.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy51.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy51.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy52.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy52.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy61.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy61.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy62.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy62.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy71.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy71.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy72.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy72.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy81.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy81.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy82.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy82.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy91.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy91.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/guppy92.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/guppy92.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/ikan.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/ikan.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/ikan2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/ikan2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/lose.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/lose.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/mainmenu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/mainmenu.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/mainmenu.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/mainmenu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/piranha.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/piranha.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/piranha0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/piranha0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/piranha1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/piranha1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/piranha2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/piranha2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/piranha3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/piranha3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/piranha4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/piranha4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/piranha5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/piranha5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/piranha6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/piranha6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/piranha7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/piranha7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/piranha8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/piranha8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/piranha9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/piranha9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy01.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy02.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy11.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy12.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy21.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy21.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy22.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy22.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy31.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy31.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy32.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy41.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy41.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy42.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy42.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy51.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy51.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy52.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy52.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy61.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy61.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy62.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy62.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy71.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy71.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy72.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy72.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy81.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy81.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy82.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy82.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy91.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy91.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rguppy92.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rguppy92.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rpiranha0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rpiranha0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rpiranha1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rpiranha1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rpiranha2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rpiranha2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rpiranha3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rpiranha3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rpiranha4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rpiranha4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rpiranha5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rpiranha5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rpiranha6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rpiranha6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rpiranha7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rpiranha7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rpiranha8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rpiranha8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rpiranha9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rpiranha9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rsnail0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rsnail0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rsnail1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rsnail1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rsnail2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rsnail2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rsnail3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rsnail3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rsnail4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rsnail4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rsnail5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rsnail5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rsnail6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rsnail6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rsnail7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rsnail7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rsnail8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rsnail8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/rsnail9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/rsnail9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/scoin0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/scoin0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/scoin1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/scoin1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/scoin2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/scoin2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/scoin3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/scoin3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/scoin4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/scoin4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/scoin5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/scoin5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/scoin6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/scoin6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/scoin7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/scoin7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/scoin8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/scoin8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/scoin9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/scoin9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/snail.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/snail.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/snail0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/snail0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/snail1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/snail1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/snail2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/snail2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/snail3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/snail3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/snail4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/snail4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/snail5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/snail5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/snail6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/snail6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/snail7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/snail7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/snail8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/snail8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/snail9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/snail9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/assets/img/win.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/assets/img/win.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/test/AquariumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/test/AquariumTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/test/CoinTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/test/CoinTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/test/DrawerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/test/DrawerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/test/FoodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/test/FoodTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/test/GuppyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/test/GuppyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/test/ItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/test/ItemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/test/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/test/LinkedListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/test/PiranhaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/test/PiranhaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/test/PointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/test/PointTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/test/SnailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/test/SnailTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/arkavquarium/Coin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Coin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/arkavquarium/Drawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Drawer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/arkavquarium/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/arkavquarium/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arkavquarium/Point.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -232,13 +24,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Drawer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Drawer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Drawer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3145">
-              <caret line="193" column="66" selection-start-line="193" selection-start-column="66" selection-end-line="193" selection-end-column="66" />
+            <state relative-caret-position="265">
+              <caret line="198" column="5" lean-forward="true" selection-start-line="198" selection-start-column="5" selection-end-line="198" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#Drawer#0;class#Drawer#0" />
+                <element signature="class#824:2336" />
+                <element signature="method#mouseClicked#0;class#824:2336" />
+                <element signature="method#mouseReleased#0;class#824:2336" />
+                <element signature="method#mouseEntered#0;class#824:2336" />
+                <element signature="method#mouseExited#0;class#824:2336" />
+                <element signature="method#keyTyped#0;class#2365:3717" />
+                <element signature="method#keyReleased#0;class#2365:3717" />
+                <element signature="method#run#0;class#Drawer#0" />
+                <element signature="method#getFrame#0;class#Drawer#0" />
+                <element signature="method#DrawPanel#0;class#DrawPanel#0;class#Drawer#0" />
+                <element signature="method#loadBackground#0;class#DrawPanel#0;class#Drawer#0" />
+                <element signature="method#loadMenu#0;class#DrawPanel#0;class#Drawer#0" />
+                <element signature="method#paintComponent#0;class#DrawPanel#0;class#Drawer#0" />
+                <element signature="method#drawSnail#0;class#DrawPanel#0;class#Drawer#0" />
+                <element signature="method#drawFood#0;class#DrawPanel#0;class#Drawer#0" />
+                <element signature="method#drawCoin#0;class#DrawPanel#0;class#Drawer#0" />
+                <element signature="method#drawGuppy#0;class#DrawPanel#0;class#Drawer#0" />
+                <element signature="method#drawPiranha#0;class#DrawPanel#0;class#Drawer#0" />
+                <element signature="method#saveGame#0;class#Drawer#0" />
               </folding>
             </state>
           </provider>
@@ -247,8 +59,8 @@
       <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state>
+              <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
               <folding>
                 <element signature="e#473#474#0" expanded="true" />
                 <element signature="e#516#517#0" expanded="true" />
@@ -257,11 +69,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Point.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Food.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Food.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+              <folding>
+                <element signature="e#330#331#0" expanded="true" />
+                <element signature="e#358#359#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Coin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Coin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="21" selection-end-column="5" />
+              <folding>
+                <element signature="e#504#505#0" expanded="true" />
+                <element signature="e#525#526#0" expanded="true" />
+                <element signature="e#582#583#0" expanded="true" />
+                <element signature="e#606#607#0" expanded="true" />
+                <element signature="e#635#636#0" expanded="true" />
+                <element signature="e#661#662#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Point.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="51" column="3" lean-forward="true" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="3" />
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#340#341#0" expanded="true" />
                 <element signature="e#364#365#0" expanded="true" />
@@ -289,6 +131,11 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>){</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -302,6 +149,9 @@
         <option value="$PROJECT_DIR$/src/com/arkavquarium/Item.java" />
         <option value="$PROJECT_DIR$/src/com/arkavquarium/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/com/arkavquarium/Point.java" />
+        <option value="$PROJECT_DIR$/src/com/arkavquarium/Coin.java" />
+        <option value="$PROJECT_DIR$/src/com/arkavquarium/Food.java" />
+        <option value="$PROJECT_DIR$/src/com/arkavquarium/Drawer.java" />
       </list>
     </option>
   </component>
@@ -528,47 +378,47 @@
       <workItem from="1524629611530" duration="1742000" />
       <workItem from="1524650312633" duration="708000" />
       <workItem from="1524651070425" duration="928000" />
-      <workItem from="1524652052051" duration="918000" />
+      <workItem from="1524652052051" duration="3671000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2384000" />
+    <option name="totallyTimeSpent" value="5137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.06802721" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.17817014" />
-      <window_info active="true" anchor="bottom" id="CheckStyle" order="12" visible="true" weight="0.3081862" />
+      <window_info active="true" anchor="bottom" id="CheckStyle" order="12" visible="true" weight="0.3611557" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info id="Designer" order="3" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1913767" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32744783" />
       <window_info id="Learn" order="5" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32744783" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,7 +429,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -785,13 +635,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/test/FishTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Food.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="2" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/test/CoinTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -841,13 +684,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Coin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -926,27 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Drawer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3145">
-          <caret line="193" column="66" selection-start-line="193" selection-start-column="66" selection-end-line="193" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -956,8 +771,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Point.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="51" column="3" lean-forward="true" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="3" />
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#340#341#0" expanded="true" />
             <element signature="e#364#365#0" expanded="true" />
@@ -969,6 +784,73 @@
             <element signature="e#548#549#0" expanded="true" />
             <element signature="e#871#872#0" expanded="true" />
             <element signature="e#930#931#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
+          <folding>
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Food.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Coin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/arkavquarium/Drawer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="198" column="5" lean-forward="true" selection-start-line="198" selection-start-column="5" selection-end-line="198" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Drawer#0;class#Drawer#0" />
+            <element signature="class#824:2336" />
+            <element signature="method#mouseClicked#0;class#824:2336" />
+            <element signature="method#mouseReleased#0;class#824:2336" />
+            <element signature="method#mouseEntered#0;class#824:2336" />
+            <element signature="method#mouseExited#0;class#824:2336" />
+            <element signature="method#keyTyped#0;class#2365:3717" />
+            <element signature="method#keyReleased#0;class#2365:3717" />
+            <element signature="method#run#0;class#Drawer#0" />
+            <element signature="method#getFrame#0;class#Drawer#0" />
+            <element signature="method#DrawPanel#0;class#DrawPanel#0;class#Drawer#0" />
+            <element signature="method#loadBackground#0;class#DrawPanel#0;class#Drawer#0" />
+            <element signature="method#loadMenu#0;class#DrawPanel#0;class#Drawer#0" />
+            <element signature="method#paintComponent#0;class#DrawPanel#0;class#Drawer#0" />
+            <element signature="method#drawSnail#0;class#DrawPanel#0;class#Drawer#0" />
+            <element signature="method#drawFood#0;class#DrawPanel#0;class#Drawer#0" />
+            <element signature="method#drawCoin#0;class#DrawPanel#0;class#Drawer#0" />
+            <element signature="method#drawGuppy#0;class#DrawPanel#0;class#Drawer#0" />
+            <element signature="method#drawPiranha#0;class#DrawPanel#0;class#Drawer#0" />
+            <element signature="method#saveGame#0;class#Drawer#0" />
           </folding>
         </state>
       </provider>
