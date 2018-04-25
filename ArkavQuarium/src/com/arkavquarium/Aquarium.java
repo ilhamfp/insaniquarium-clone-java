@@ -314,7 +314,7 @@ public class Aquarium implements Serializable {
   public void moveFood() {
     for (int i = 0; i < listFood.getSize(); i++) {
       listFood.get(i).move(maxLocation.getY() - 68);
-      if (listFood.get(i).isAtBottom(maxLocation.getY())) {
+      if (listFood.get(i).isAtBottom(maxLocation.getY() - 68)) {
         listFood.remove(listFood.get(i));
       }
     }

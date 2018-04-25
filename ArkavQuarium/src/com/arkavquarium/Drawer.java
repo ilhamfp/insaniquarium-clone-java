@@ -283,6 +283,7 @@ public class Drawer {
           g.setFont(font);
           String money = Integer.toString(aquarium.getMoney());
           String egg = Integer.toString(aquarium.getEgg());
+          g.setColor(Color.WHITE);
           g.drawString(egg, 831, 70);
           g.drawString(money, 950, 115);
 
