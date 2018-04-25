@@ -33,9 +33,9 @@ class ItemTest {
         for (int x = 0; x<3; x++){
             item.move(maks);
         }
-        double expected = Math.min(maks,50.0 + (3*ITEM_SPEED));
+        double expected = Math.round(Math.min(maks,50.0 + (3*ITEM_SPEED)));
 
-        assertEquals(expected,Math.floor(item.getY() * 100) / 100);
+        assertEquals(expected,Math.round(Math.floor(item.getY() * 100) / 100));
     }
 
     @Test

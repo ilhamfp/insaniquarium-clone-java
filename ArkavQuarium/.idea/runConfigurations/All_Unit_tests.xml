@@ -8,7 +8,7 @@
     <option name="TEST_OBJECT" value="pattern" />
     <option name="VM_PARAMETERS" value="" />
     <option name="PARAMETERS" value="" />
-    <option name="WORKING_DIRECTORY" value="" />
+    <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     <option name="PASS_PARENT_ENVS" value="true" />
     <option name="TEST_SEARCH_SCOPE">
       <value defaultName="wholeProject" />
