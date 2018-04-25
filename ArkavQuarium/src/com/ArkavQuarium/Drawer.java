@@ -170,7 +170,7 @@ public class Drawer {
         else if (temp >= 0.75 && temp < 0.9) return 5;
         else if (temp >= 0.9 && temp < 1.05) return 6;
         else if (temp >= 1.05 && temp < 1.2) return 7;
-        else if (temp >= 1.2 && temp < 0.135) return 8;
+        else if (temp >= 1.2 && temp < 1.35) return 8;
         else return 9;
     }
 
@@ -331,6 +331,7 @@ public class Drawer {
             FileOutputStream fos = new FileOutputStream(saveFilename);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
 
+            // Method for serialization of Aquarium's class object
             oos.writeObject(aquarium);
 
             oos.close();
