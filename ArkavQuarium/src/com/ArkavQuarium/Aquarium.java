@@ -6,18 +6,18 @@ import java.io.*;
 public class Aquarium implements Serializable {
 
 
-    protected Point maxLocation = new Point();
-    protected LinkedList<Guppy> listGuppy = new LinkedList<Guppy>();
-    protected LinkedList<Piranha> listPiranha = new LinkedList<Piranha>();
-    protected LinkedList<Coin> listCoin = new LinkedList<Coin>();
-    protected LinkedList<Food> listFood = new LinkedList<Food>();
-    protected Snail garry;
-    protected int egg;
-    protected int money;
-    protected int guppyPeriod;
-    protected int piranhaPeriod;
-    protected int foodPeriod;
-    protected long startTime;
+    private Point maxLocation = new Point();
+    private LinkedList<Guppy> listGuppy = new LinkedList<Guppy>();
+    private LinkedList<Piranha> listPiranha = new LinkedList<Piranha>();
+    private LinkedList<Coin> listCoin = new LinkedList<Coin>();
+    private LinkedList<Food> listFood = new LinkedList<Food>();
+    private Snail garry;
+    private int egg;
+    private int money;
+    private int guppyPeriod;
+    private int piranhaPeriod;
+    private int foodPeriod;
+    private long startTime;
 
     public Aquarium(int screenWidth, int screenHeight) {
         startTime = System.nanoTime();
