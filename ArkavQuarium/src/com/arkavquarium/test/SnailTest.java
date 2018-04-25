@@ -1,8 +1,8 @@
-package com.ArkavQuarium.test;
+package com.arkavquarium.test;
 
-import com.ArkavQuarium.Snail;
-import com.ArkavQuarium.Point;
-import com.ArkavQuarium.Bool;
+import com.arkavquarium.Snail;
+import com.arkavquarium.Point;
+import com.arkavquarium.Bool;
 
 import org.junit.jupiter.api.Test;
 

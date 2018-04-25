@@ -1,9 +1,9 @@
-package com.ArkavQuarium.test;
+package com.arkavquarium.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import com.ArkavQuarium.Coin;
-import com.ArkavQuarium.Point;
+import com.arkavquarium.Coin;
+import com.arkavquarium.Point;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,9 +1,9 @@
-package com.ArkavQuarium.test;
+package com.arkavquarium.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import com.ArkavQuarium.Item;
-import static com.ArkavQuarium.Constants.*;
+import com.arkavquarium.Item;
+import static com.arkavquarium.Constants.*;
 import org.junit.jupiter.api.Test;
 
 class ItemTest {

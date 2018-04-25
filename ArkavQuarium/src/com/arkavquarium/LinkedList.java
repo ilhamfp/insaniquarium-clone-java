@@ -1,4 +1,4 @@
-package com.ArkavQuarium;
+package com.arkavquarium;
 
 //import com.sun.xml.internal.bind.v2.model.core.EnumLeafInfo;
 

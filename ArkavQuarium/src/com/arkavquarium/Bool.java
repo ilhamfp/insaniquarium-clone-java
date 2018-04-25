@@ -1,4 +1,4 @@
-package com.ArkavQuarium;
+package com.arkavquarium;
 
 import java.io.Serializable;
 

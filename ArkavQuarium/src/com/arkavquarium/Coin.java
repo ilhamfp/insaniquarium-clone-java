@@ -1,5 +1,5 @@
-package com.ArkavQuarium;
-import static com.ArkavQuarium.Constants.*;
+package com.arkavquarium;
+import static com.arkavquarium.Constants.*;
 
 public class Coin extends Item {
     private int baseVal;

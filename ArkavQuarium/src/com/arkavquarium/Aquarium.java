@@ -1,5 +1,5 @@
-package com.ArkavQuarium;
-import static com.ArkavQuarium.Constants.*;
+package com.arkavquarium;
+import static com.arkavquarium.Constants.*;
 import java.util.Random;
 import java.io.*;
 

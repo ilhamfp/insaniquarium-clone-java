@@ -1,6 +1,6 @@
-package com.ArkavQuarium.test;
+package com.arkavquarium.test;
 
-import com.ArkavQuarium.LinkedList;
+import com.arkavquarium.LinkedList;
 
 import org.junit.jupiter.api.Test;
 

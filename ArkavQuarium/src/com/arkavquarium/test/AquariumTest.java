@@ -1,7 +1,6 @@
-package com.ArkavQuarium.test;
+package com.arkavquarium.test;
 
-import com.ArkavQuarium.Aquarium;
-import com.ArkavQuarium.Food;
+import com.arkavquarium.Aquarium;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,4 +1,4 @@
-package com.ArkavQuarium;
+package com.arkavquarium;
 
 public class Snail extends Point{
 

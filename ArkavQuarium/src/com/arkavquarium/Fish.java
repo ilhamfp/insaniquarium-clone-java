@@ -1,8 +1,8 @@
-package com.ArkavQuarium;
+package com.arkavquarium;
 
 import java.util.Random;
 import java.lang.Math;
-import static com.ArkavQuarium.Constants.*;
+import static com.arkavquarium.Constants.*;
 
 public abstract class Fish extends Point {
 

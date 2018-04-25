@@ -1,12 +1,12 @@
-package com.ArkavQuarium.test;
+package com.arkavquarium.test;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-import com.ArkavQuarium.Point;
-import com.ArkavQuarium.Guppy;
-import com.ArkavQuarium.Food;
-import com.ArkavQuarium.LinkedList;
+import com.arkavquarium.Point;
+import com.arkavquarium.Guppy;
+import com.arkavquarium.Food;
+import com.arkavquarium.LinkedList;
 
 class GuppyTest {
     @Test

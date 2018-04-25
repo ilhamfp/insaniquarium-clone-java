@@ -1,12 +1,12 @@
-package com.ArkavQuarium.test;
+package com.arkavquarium.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
-import com.ArkavQuarium.Piranha;
-import com.ArkavQuarium.Point;
-import com.ArkavQuarium.Guppy;
-import com.ArkavQuarium.LinkedList;
+import com.arkavquarium.Piranha;
+import com.arkavquarium.Point;
+import com.arkavquarium.Guppy;
+import com.arkavquarium.LinkedList;
 
 class PiranhaTest {
     @Test

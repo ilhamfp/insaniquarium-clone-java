@@ -1,11 +1,11 @@
-package com.ArkavQuarium;
+package com.arkavquarium;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
 import java.util.Random;
 import javax.swing.*;
 
-import static com.ArkavQuarium.Constants.*;
+import static com.arkavquarium.Constants.*;
 
 public class Drawer {
 
@@ -29,7 +29,7 @@ public class Drawer {
 
         aquarium = new Aquarium(1080, 720);
 
-        frame = new JFrame("ArkavQuarium");
+        frame = new JFrame("arkavquarium");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         drawPanel = new DrawPanel();
@@ -186,12 +186,12 @@ public class Drawer {
         }
 
         public void loadBackground() {
-            ImageIcon temp = new ImageIcon("src/com/ArkavQuarium/assets/img/aquarium.png");
+            ImageIcon temp = new ImageIcon("src/com/arkavquarium/assets/img/aquarium.png");
             backgroundImage = temp.getImage();
         }
 
         public void loadMenu() {
-            ImageIcon temp = new ImageIcon("src/com/ArkavQuarium/assets/img/mainmenu.png");
+            ImageIcon temp = new ImageIcon("src/com/arkavquarium/assets/img/mainmenu.png");
             mainMenu = temp.getImage();
         }
 
@@ -241,8 +241,8 @@ public class Drawer {
             int direction = snail.getDirection();
             String filename = "snail" + String.valueOf(fps);
 
-            if (direction == 1) filename = "src/com/ArkavQuarium/assets/img/r" + filename + ".png";
-            else filename = "src/com/ArkavQuarium/assets/img/" + filename + ".png";
+            if (direction == 1) filename = "src/com/arkavquarium/assets/img/r" + filename + ".png";
+            else filename = "src/com/arkavquarium/assets/img/" + filename + ".png";
 
             ImageIcon temp = new ImageIcon(filename);
             Image snailImage = temp.getImage();
@@ -254,7 +254,7 @@ public class Drawer {
             int fps = getFrame();
             double x = food.getX();
             double y = food.getY();
-            String filename = "src/com/ArkavQuarium/assets/img/food" + String.valueOf(fps) + ".png";
+            String filename = "src/com/arkavquarium/assets/img/food" + String.valueOf(fps) + ".png";
 
             ImageIcon temp = new ImageIcon(filename);
             Image foodImage = temp.getImage();
@@ -272,10 +272,10 @@ public class Drawer {
             double y = coin.getY();
             int level = coin.getValue() / coin.getBaseVal();
 
-            if (level == 1) filename = "src/com/ArkavQuarium/assets/img/b" + filename;
-            else if (level == 2) filename = "src/com/ArkavQuarium/assets/img/g" + filename;
-            else if (level == 3) filename = "src/com/ArkavQuarium/assets/img/s" + filename;
-            else filename = "src/com/ArkavQuarium/assets/img/dcoin.png";
+            if (level == 1) filename = "src/com/arkavquarium/assets/img/b" + filename;
+            else if (level == 2) filename = "src/com/arkavquarium/assets/img/g" + filename;
+            else if (level == 3) filename = "src/com/arkavquarium/assets/img/s" + filename;
+            else filename = "src/com/arkavquarium/assets/img/dcoin.png";
 
             ImageIcon temp = new ImageIcon(filename);
             Image coinImage = temp.getImage();
@@ -292,8 +292,8 @@ public class Drawer {
             double x = guppy.getX();
             double y = guppy.getY();
 
-            if (direction == 1) filename = "src/com/ArkavQuarium/assets/img/rguppy" + String.valueOf(fps);
-            else filename = "src/com/ArkavQuarium/assets/img/guppy" + String.valueOf(fps);
+            if (direction == 1) filename = "src/com/arkavquarium/assets/img/rguppy" + String.valueOf(fps);
+            else filename = "src/com/arkavquarium/assets/img/guppy" + String.valueOf(fps);
 
             if (level == 1) filename += ".png";
             else if (level == 2) filename += "1.png";
@@ -312,8 +312,8 @@ public class Drawer {
             double x = piranha.getX();
             double y = piranha.getY();
 
-            if (direction == 1) filename = "src/com/ArkavQuarium/assets/img/rpiranha" + String.valueOf(fps) + ".png";
-            else filename = "src/com/ArkavQuarium/assets/img/piranha" + String.valueOf(fps) + ".png";
+            if (direction == 1) filename = "src/com/arkavquarium/assets/img/rpiranha" + String.valueOf(fps) + ".png";
+            else filename = "src/com/arkavquarium/assets/img/piranha" + String.valueOf(fps) + ".png";
 
             ImageIcon temp = new ImageIcon(filename);
             Image piranhaImage = temp.getImage();
