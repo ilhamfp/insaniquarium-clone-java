@@ -1,6 +1,8 @@
 package com.ArkavQuarium;
 
-public final class Constants {
+import java.io.Serializable;
+
+public final class Constants implements Serializable {
     public static final int COIN_BASE_VALUE = 15;
     public static final int FOOD_PRICE = 5;
     public static final int EGG_PRICE = 500;

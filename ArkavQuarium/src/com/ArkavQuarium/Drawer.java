@@ -1,9 +1,11 @@
 package com.ArkavQuarium;
 import java.awt.*;
 import java.awt.event.*;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.io.*;
+import java.util.Random;
 import javax.swing.*;
+
+import static com.ArkavQuarium.Constants.*;
 
 public class Drawer {
 
@@ -48,7 +50,7 @@ public class Drawer {
                     if ((e.getX() >= 600 && e.getX() <= 965) && (e.getY() >= 212 && e.getY() <= 283)) {
                         String loadFilename = JOptionPane.showInputDialog("Please input file name for load: ");
                         System.out.println("Load Game");
-                        aquarium.loadGame((loadFilename));
+                        loadGame((loadFilename));
                         menuState = false;
                     }
 
@@ -144,7 +146,7 @@ public class Drawer {
             if (savingFile){
                 String saveFilename= JOptionPane.showInputDialog("Please input file name for save: ");
                 System.out.println("Game Saved to"+saveFilename);
-                aquarium.saveGame(saveFilename);
+                saveGame(saveFilename);
                 savingFile = false;
             }
         }
@@ -323,6 +325,54 @@ public class Drawer {
 
         }
 
+    }
+    public void saveGame(String saveFilename) {
+        try {
+            FileOutputStream fos = new FileOutputStream(saveFilename);
+            ObjectOutputStream oos = new ObjectOutputStream(fos);
+
+            oos.writeObject(aquarium);
+
+            oos.close();
+            fos.close();
+        } catch (IOException i) {
+            i.printStackTrace();
+        }
+
+    }
+
+    public void loadGame(String loadFilename) {
+        try {
+            FileInputStream fis = new FileInputStream(loadFilename);
+            ObjectInputStream ois = new ObjectInputStream(fis);
+
+            // Method for de-serialization of Aquarium's class object
+            aquarium = (Aquarium) ois.readObject();
+            Random r = new Random();
+            if (!aquarium.getListGuppy().isEmpty()) {
+                for (int i = 0; i < aquarium.getListGuppy().getSize(); i++) {
+                    double randomNumber1 = 0 + (FISH_HUNGRY_CONSTRAINT-1 - 0) * r.nextDouble();
+                    double randomNumber2 = 0 + (FISH_CHANGE_DIR_INTERVAL-1 - 0) * r.nextDouble();
+                    aquarium.getListGuppy().get(i).setLastEaten(aquarium.getCurrentTime());
+                    aquarium.getListGuppy().get(i).setLastCoinTime(aquarium.getCurrentTime()-randomNumber1);
+                    aquarium.getListGuppy().get(i).setLastChangeDir(aquarium.getCurrentTime()-randomNumber2);
+                }
+            }
+
+            if (!aquarium.getListPiranha().isEmpty()) {
+                for (int i = 0; i < aquarium.getListPiranha().getSize(); i++) {
+                    aquarium.getListPiranha().get(i).setLastEaten(aquarium.getCurrentTime());
+                }
+            }
+
+            // closing streams
+            ois.close();
+            fis.close();
+        } catch (IOException i) {
+            i.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 }
 

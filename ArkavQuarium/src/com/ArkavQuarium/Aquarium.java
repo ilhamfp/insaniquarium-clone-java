@@ -1,8 +1,9 @@
 package com.ArkavQuarium;
 import static com.ArkavQuarium.Constants.*;
 import java.util.Random;
+import java.io.*;
 
-public class Aquarium {
+public class Aquarium implements Serializable {
 
 
     protected Point maxLocation = new Point();
@@ -255,14 +256,6 @@ public class Aquarium {
                 listFood.remove(listFood.get(i));
             }
         }
-    }
-
-    public void saveGame(String saveFilename) {
-
-    }
-
-    public void loadGame(String loadFilename) {
-        
     }
 
     public int getStateGame() {

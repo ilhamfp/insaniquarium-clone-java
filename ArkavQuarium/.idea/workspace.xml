@@ -2,16 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fab94596-4bde-4e66-8de2-eaac5d6e9018" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Aquarium.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Aquarium.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Bool.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Bool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Constants.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer$DrawPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer$DrawPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Drawer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/LinkedList$Element.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/LinkedList$Element.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/LinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArkavQuarium/com/ArkavQuarium/Point.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Aquarium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ArkavQuarium/Aquarium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Bool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ArkavQuarium/Bool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ArkavQuarium/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Drawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ArkavQuarium/Drawer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ArkavQuarium/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ArkavQuarium/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ArkavQuarium/Point.java" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,37 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Aquarium.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Aquarium.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="260" column="8" selection-start-line="260" selection-start-column="8" selection-end-line="260" selection-end-column="8" />
-              <folding>
-                <element signature="e#1201#1202#0" expanded="true" />
-                <element signature="e#1235#1236#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Drawer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Drawer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="51" selection-end-column="42" />
-              <folding>
-                <element signature="e#4397#4398#0" expanded="true" />
-                <element signature="e#4445#4446#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AquariumTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/test/AquariumTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+            <state relative-caret-position="165">
+              <caret line="347" selection-start-line="347" selection-end-line="347" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,11 +42,74 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Aquarium.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Aquarium.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+            <state relative-caret-position="255">
+              <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/LinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1241">
+              <caret line="85" column="22" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Guppy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Guppy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1615">
+              <caret line="108" column="47" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fish.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Fish.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1564">
+              <caret line="129" column="53" selection-start-line="129" selection-start-column="37" selection-end-line="129" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Point.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Point.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bool.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Bool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -76,11 +123,22 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>gambar</find>
+      <find>create</find>
+      <find>isTimeToDie</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,10 +150,13 @@
         <option value="$PROJECT_DIR$/src/com/ArkavQuarium/test/AquariumTest.java" />
         <option value="$PROJECT_DIR$/src/com/ArkavQuarium/test/DrawerTest.java" />
         <option value="$PROJECT_DIR$/src/com/ArkavQuarium/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/ArkavQuarium/LinkedList.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/com/ArkavQuarium/Drawer.java" />
         <option value="$PROJECT_DIR$/src/com/ArkavQuarium/Aquarium.java" />
+        <option value="$PROJECT_DIR$/src/com/ArkavQuarium/Constants.java" />
+        <option value="$PROJECT_DIR$/src/com/ArkavQuarium/Point.java" />
+        <option value="$PROJECT_DIR$/src/com/ArkavQuarium/Bool.java" />
+        <option value="$PROJECT_DIR$/src/com/ArkavQuarium/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/com/ArkavQuarium/Drawer.java" />
       </list>
     </option>
   </component>
@@ -108,15 +169,18 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="728" />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,6 +219,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,7 +383,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a9c72f64-3e9f-4b23-aedd-a3db3f1ae9ec" name="Default" comment="" />
+      <changelist id="fab94596-4bde-4e66-8de2-eaac5d6e9018" name="Default" comment="" />
       <created>1524233687736</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -325,11 +392,12 @@
       <workItem from="1524233864476" duration="14696000" />
       <workItem from="1524321981474" duration="6237000" />
       <workItem from="1524334919711" duration="4877000" />
+      <workItem from="1524629611530" duration="974000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9036000" />
+    <option name="totallyTimeSpent" value="12399000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -338,86 +406,67 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.06802721" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18730651" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Learn" order="2" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info id="Designer" order="3" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="Learn" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.12789115" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17956656" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Designer" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14055637" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info id="Learn" order="5" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14127605" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33118972" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.06802721" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14051522" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33118972" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Learn" order="5" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info id="Capture Tool" order="7" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.06802721" />
       <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14051522" />
+      <window_info id="Favorites" order="6" side_tool="true" />
     </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -449,20 +498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
           <caret line="97" column="8" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
-          <folding>
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#803#804#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
-            <element signature="e#1316#1317#0" expanded="true" />
-            <element signature="e#1348#1349#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -627,27 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Bool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Snail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Piranha.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/test/FishTest.java" />
     <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Food.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -670,13 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Coin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/test/FoodTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -684,59 +691,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/test/DrawerTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="50" column="2" selection-start-line="50" selection-start-column="2" selection-end-line="53" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="99" column="1" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
-          <folding>
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#803#804#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
-            <element signature="e#1316#1317#0" expanded="true" />
-            <element signature="e#1348#1349#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Fish.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/test/PiranhaTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -744,19 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Guppy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="845">
-          <caret line="98" column="33" lean-forward="true" selection-start-line="98" selection-start-column="33" selection-end-line="98" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -764,14 +710,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
           <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Main.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -780,32 +720,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Constants.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        <state relative-caret-position="527">
+          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Coin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Snail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Bool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="85" column="22" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Piranha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Guppy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="108" column="47" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Fish.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="129" column="53" selection-start-line="129" selection-start-column="37" selection-end-line="129" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Drawer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="51" selection-end-column="42" />
+        <state relative-caret-position="165">
+          <caret line="347" selection-start-line="347" selection-end-line="347" />
           <folding>
-            <element signature="e#4397#4398#0" expanded="true" />
-            <element signature="e#4445#4446#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Aquarium.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="260" column="8" selection-start-line="260" selection-start-column="8" selection-end-line="260" selection-end-column="8" />
+        <state relative-caret-position="119">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="13" />
           <folding>
-            <element signature="e#1201#1202#0" expanded="true" />
-            <element signature="e#1235#1236#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ArkavQuarium/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
         </state>
       </provider>
     </entry>

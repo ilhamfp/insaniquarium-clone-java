@@ -1,6 +1,8 @@
 package com.ArkavQuarium;
 
-public class Bool {
+import java.io.Serializable;
+
+public class Bool implements Serializable {
     private boolean value;
 
     public Bool(){

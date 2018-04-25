@@ -2,12 +2,14 @@ package com.ArkavQuarium;
 
 //import com.sun.xml.internal.bind.v2.model.core.EnumLeafInfo;
 
-public class LinkedList<T> {
+import java.io.Serializable;
+
+public class LinkedList<T> implements Serializable {
     private Element<T> first;
     private int size;
 
     // class element list
-    private class Element<T> {
+    private class Element<T> implements Serializable{
         private T data;
         private Element<T> next;
 
